@@ -2,13 +2,20 @@ import io
 import os
 import random
 import re
+import time
 import warnings
 from collections import defaultdict
 from copy import deepcopy
 from tqdm import tqdm, trange
 
 from .mcts import MCTS, MCTSNode
-from .models import QueryLM
+
+from openai import AzureOpenAI
+client = AzureOpenAI(
+    api_key = "oaip_RqQwZFamrfnijuXanasNJdEWhljVocbx",  
+    api_version = "2023-12-01-preview",
+    azure_endpoint = "https://gcrendpoint.azurewebsites.net"
+)
 
 
 def is_terminal_question(prompt, prompt_index):
@@ -22,6 +29,41 @@ def is_terminal_question(prompt, prompt_index):
     if last_sub.lower() in question.lower():
         return True
     return False
+
+
+def get_gpt4_res(prompt, temperature, max_tokens=1024, desc="", model="gpt3.5"):
+    open(f"{model}_call.txt", "a").write(f"{model} call | {desc}\n")
+    parameters = {
+        "model": "gpt-4-32k" if model == "gpt4" else "gpt-35-turbo",
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "top_p": 1,
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "stop": None,
+    }
+    messages = [{'role': 'user', 'content': prompt}]
+
+    ans, timeout = "", 5
+    while not ans:
+        try:
+            time.sleep(timeout)
+            # print("before openai call")
+            response = client.chat.completions.create(messages=messages, **parameters)
+            ans = response.choices[0].message.content
+            # print("after openai call", ans)
+        except Exception as e:
+            print(e)
+        if not ans:
+            timeout = timeout * 2
+            if timeout > 120:
+                timeout = 1
+            try:
+                print(f"Will retry after {timeout} seconds ...")
+            except:
+                pass
+
+    return ans
 
 
 class ReasoningMCTSNode(MCTSNode):
@@ -131,7 +173,6 @@ class ReasoningMCTSNode(MCTSNode):
 def reasoning_mcts_search(question: str,
                           prompts,
                           question_prompts,
-                          world_model: QueryLM,
                           n_sample_subquestion,
                           temperature,
                           mcts_rollouts,
@@ -140,7 +181,6 @@ def reasoning_mcts_search(question: str,
                           max_depth,
                           r_alpha,
                           r1_default,
-                          eos_token_id,
                           speedup_confidence_batch_size=None):
     if speedup_confidence_batch_size is None:
         speedup_confidence_batch_size = n_sample_confidence
@@ -156,8 +196,9 @@ def reasoning_mcts_search(question: str,
         if depth == max_depth:
             agent_output = [overall_question_output]
         else:
-            agent_output = world_model.query_LM(agent_input, do_sample=True, num_return_sequences=n_sample_subquestion,
-                                                eos_token_id=eos_token_id, temperature=temperature)
+            agent_output = []
+            for _ in range(n_sample_subquestion):
+                agent_output.append(agent_input + get_gpt4_res(agent_input, temperature, desc="gen_fn"))
             for i, output in enumerate(agent_output):
                 if is_terminal_question(output, prompt_index):
                     agent_output[i] = overall_question_output
@@ -176,8 +217,14 @@ def reasoning_mcts_search(question: str,
         inp = [q_inp + question_prompts["new_subquestion_prefix"].format(depth) +
                q.replace('Now we can answer the question: ', '') +
                question_prompts["answer_prefix"] for q in questions]
-        yes_no = world_model.query_next_token(inp)
-        return yes_no[:, 0]
+        yes_no = []
+        for prompt in inp:
+            res = get_gpt4_res(prompt, temperature=0.0, max_tokens=1, desc="r0_fn")
+            if res.lower().startswith("yes"):
+                yes_no.append(1)
+            else:
+                yes_no.append(0)
+        return yes_no
 
     def r1_fn(inp, depth):
         if f'Question {prompt_index}.' not in inp:
@@ -189,9 +236,10 @@ def reasoning_mcts_search(question: str,
         answer_list = []
         sampled = 0
         while sampled < n_sample_confidence:
-            world_output = world_model.query_LM(world_input, do_sample=True,
-                                                num_return_sequences=speedup_confidence_batch_size,
-                                                eos_token_id=eos_token_id, temperature=temperature)
+            world_output = []
+            for _ in range(speedup_confidence_batch_size):
+                res = world_input + get_gpt4_res(world_input, temperature, desc="r1_fn")
+                world_output.append(res)
             sampled += speedup_confidence_batch_size
             for output in world_output:
                 result = output.strip().split('\n')[-1]
