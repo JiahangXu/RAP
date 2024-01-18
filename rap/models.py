@@ -2,8 +2,6 @@ from abc import ABC, abstractmethod
 
 import torch
 
-from llama import LLaMA
-
 
 class QueryLM(ABC):
     @abstractmethod
@@ -11,13 +9,13 @@ class QueryLM(ABC):
         pass
 
     @abstractmethod
-    def query_next_token(self, prompt: list[str]):
+    def query_next_token(self, prompt):
         pass
 
 
 class QueryHfModel(QueryLM):
     # This is not well-tested. Please use LLaMA if possible.
-    def query_next_token(self, prompt: list[str]):
+    def query_next_token(self, prompt):
         raise NotImplementedError
 
     def __init__(self, model, tokenizer, max_response_length, device):
@@ -38,21 +36,32 @@ class QueryHfModel(QueryLM):
 
 
 class QueryLlama(QueryLM):
-    def __init__(self, llamamodel: LLaMA, max_response_length, log_file) -> None:
+    def __init__(self, llamamodel, tokenizer, max_response_length, log_file) -> None:
         self.llamamodel = llamamodel
-        self.tokenizer = self.llamamodel.tokenizer
+        self.tokenizer = tokenizer
         self.max_response_length = max_response_length
         self.log_file = log_file
-        self.max_batch_size = llamamodel.model.params.max_batch_size
-        self.yes_no = self.tokenizer.encode('Yes No', bos=False, eos=False)
+        self.max_batch_size = 1
+        self.yes_no = self.tokenizer.encode('Yes No')[1:]
+        self.easy_medium_hard = self.tokenizer.encode('easy medium hard')[1:]
+        self._1_to_7 = self.tokenizer.encode('one two three four five six seven')[1:]
 
     def query_LM(self, prompt, eos_token_id, num_return_sequences=1, do_sample=True, temperature=0.8):
         temperature = temperature if do_sample else 0
         all_results = []
         for start in range(0, num_return_sequences, self.max_batch_size):
             end = min(start + self.max_batch_size, num_return_sequences)
-            results = self.llamamodel.generate([prompt] * (end - start), max_gen_len=self.max_response_length, temperature=temperature, eos_token_id=eos_token_id)
-            all_results.extend(results)
+            encoded_prompt = self.tokenizer.encode(prompt, add_special_tokens=False, return_tensors="pt").to(self.llamamodel.device)
+            results = self.llamamodel.generate(encoded_prompt, max_length=self.max_response_length+len(encoded_prompt[0]), temperature=temperature, num_return_sequences=end - start)
+
+            if len(results.shape) > 2:
+                results.squeeze_()
+            for generated_sequence in results:
+                generated_sequence = generated_sequence.tolist()
+                # Decode text
+                text = self.tokenizer.decode(generated_sequence, clean_up_tokenization_spaces=True)
+                all_results.append(text)
+
         if self.log_file:
             with open(self.log_file, "a") as f:
                 f.write("="*50+"\n")
@@ -68,12 +77,38 @@ class QueryLlama(QueryLM):
             prompts = [prompts]
         ret = []
         for prompt in prompts:
-            tokens = self.tokenizer.encode(prompt, bos=True, eos=False)
+            tokens = self.tokenizer.encode(prompt)
             tokens = torch.tensor([tokens]).cuda().long()
-            output, h = self.llamamodel.model.forward(tokens, start_pos=0)
+            output = self.llamamodel.forward(tokens).logits[:, -1, :]
             ret.append(output)
         outputs = torch.cat(ret, dim=0)
         filtered = outputs[:, self.yes_no]
         dist = torch.softmax(filtered, dim=-1)
         return dist
 
+    @torch.no_grad()
+    def query_difficulty_word(self, model_input: str):
+        tokens = self.tokenizer.encode(model_input)
+        tokens = torch.tensor([tokens]).cuda().long()
+        output = self.llamamodel.forward(tokens).logits[:, -1, :]  #! output: [1, 32000]
+        filtered = output[:, self.easy_medium_hard]
+        dist = torch.softmax(filtered, dim=-1)  #! dist: [1, 3]
+        max_id = torch.argmax(dist, dim=-1, keepdim=False) #! [1]
+        return ["easy", "medium", "hard"][max_id.item()]
+    
+    @torch.no_grad()
+    def query_difficulty_number(self, model_input: str):
+        tokens = self.tokenizer.encode(model_input)
+        tokens = torch.tensor([tokens]).cuda().long()
+        output, h = self.llamamodel.forward(tokens, start_pos=0)  #! output: [1, 32000]
+        filtered = output[:, self._1_to_7]
+        dist = torch.softmax(filtered, dim=-1)  #! dist: [1, 5]
+        print("Prob dist is: ", dist)
+        assert dist.shape[1] == 7, dist
+        max_id = torch.argmax(dist, dim=-1, keepdim=False) #! [1]
+        try:
+            ans = [1, 2, 3, 4, 5, 6, 7][max_id.item()]
+            return ans
+        except:
+            print(max_id.item())
+            breakpoint()
