@@ -2,7 +2,7 @@ import pickle
 import re
 from datetime import datetime
 
-from rap.models import QueryLlama, QueryHfModel
+from rap.models import QueryLlama, QueryHfModel, QueryVLLM
 from rap.utils.gsm8k import judge_answer_gsm8k, get_gsm8k_dataset
 from rap.gsm8k_mcts import reasoning_mcts_search
 
@@ -20,7 +20,6 @@ import numpy as np
 from pathlib import Path
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from dataclasses import dataclass
 
 
 def load_hf(model_ckpt):
@@ -37,8 +36,20 @@ def load_hf(model_ckpt):
     return model, tokenizer
 
 
+def load_vllm(model_ckpt):
+    from vllm import LLM
+    start_time = time.time()
+    print("loading tokenizer ...")
+    tokenizer = AutoTokenizer.from_pretrained(model_ckpt)
+
+    print("loading model ...")
+    model = LLM(model=model_ckpt)
+    print(f"Loaded in {time.time() - start_time:.2f} seconds")
+    return model, tokenizer
+
+
 def main_mcts(model_ckpt='../Llama-2-7b-hf',
-              model_type='hf', # choose from ["hf", "vllm" (not support yet), "gpt" (not support yet)]
+              model_type='hf', # choose from ["hf", "vllm", "gpt" (not support yet)]
               prompts='data/gsm8k/prompts/interactive_examples.json',
               question_prompts='data/gsm8k/prompts/useful_examples.json',
               max_batch_size=2,
@@ -70,6 +81,9 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
     if model_type == "hf":
         model, tokenizer = load_hf(model_ckpt)
         world_model = QueryHfModel(model, tokenizer, max_response_length=max_response_length, log_file=None)
+    elif model_type == "vllm":
+        model, tokenizer = load_vllm(model_ckpt)
+        world_model = QueryVLLM(model, tokenizer, max_response_length=max_response_length, log_file=None)
 
     examples = get_gsm8k_dataset('test')
     with open(prompts) as f:
