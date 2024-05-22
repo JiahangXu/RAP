@@ -2,8 +2,6 @@ from abc import ABC, abstractmethod
 
 import torch
 
-from llama import LLaMA
-
 
 class QueryLM(ABC):
     @abstractmethod
@@ -16,29 +14,58 @@ class QueryLM(ABC):
 
 
 class QueryHfModel(QueryLM):
-    # This is not well-tested. Please use LLaMA if possible.
-    def query_next_token(self, prompt: list[str]):
-        raise NotImplementedError
+    @torch.no_grad()
+    def query_next_token(self, prompts):
+        if isinstance(prompts, str):
+            prompts = [prompts]
+        ret = []
+        for prompt in prompts:
+            tokens = self.tokenizer.encode(prompt)
+            tokens = torch.tensor([tokens]).cuda().long()
+            output = self.model.forward(tokens).logits[:, -1, :]
+            ret.append(output)
+        outputs = torch.cat(ret, dim=0)
+        filtered = outputs[:, self.yes_no]
+        dist = torch.softmax(filtered, dim=-1)
+        return dist
 
-    def __init__(self, model, tokenizer, max_response_length, device):
+    def __init__(self, model, tokenizer, max_response_length, log_file) -> None:
         self.model = model
         self.tokenizer = tokenizer
-        self.device = device
-        self.n_examples = 1
         self.max_response_length = max_response_length
+        self.log_file = log_file
+        self.max_batch_size = 1 # only test batch_size=1
+        self.yes_no = self.tokenizer.encode('Yes No')[1:]
 
-    def query_LM(self, prompt, **gen_kwargs):
-        with torch.no_grad():
-            inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-            # print("input length", len(inputs))
-            # Generate
-            generate_ids = self.model.generate(inputs.input_ids, max_new_tokens=self.max_response_length, **gen_kwargs)
-            text = self.tokenizer.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=True)
-        return text
+    @torch.no_grad()
+    def query_LM(self, prompt, eos_token_id, num_return_sequences=1, do_sample=True, temperature=0.8):
+        temperature = temperature if do_sample else 0
+        all_results = []
+        for start in range(0, num_return_sequences, self.max_batch_size):
+            end = min(start + self.max_batch_size, num_return_sequences)
+            encoded_prompt = self.tokenizer.encode(prompt, add_special_tokens=False, return_tensors="pt").to(self.model.device)
+            results = self.model.generate(encoded_prompt, max_length=self.max_response_length+len(encoded_prompt[0]), temperature=temperature, num_return_sequences=end - start, pad_token_id=eos_token_id, eos_token_id=eos_token_id, do_sample=do_sample)
+            
+            if len(results.shape) > 2:
+                results.squeeze_()
+            for generated_sequence in results:
+                generated_sequence = generated_sequence.tolist()
+                # Decode text
+                text = self.tokenizer.decode(generated_sequence, clean_up_tokenization_spaces=True)
+                all_results.append(text)
+
+        if self.log_file:
+            with open(self.log_file, "a") as f:
+                f.write("="*50+"\n")
+                f.write(prompt + "\n")
+                for result in all_results:
+                    f.write("-"*50+"\n")
+                    f.write(result.replace(prompt, "") + "\n")
+        return all_results
 
 
 class QueryLlama(QueryLM):
-    def __init__(self, llamamodel: LLaMA, max_response_length, log_file) -> None:
+    def __init__(self, llamamodel, max_response_length, log_file) -> None:
         self.llamamodel = llamamodel
         self.tokenizer = self.llamamodel.tokenizer
         self.max_response_length = max_response_length
