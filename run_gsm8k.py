@@ -31,7 +31,7 @@ def load_hf(model_ckpt):
         tokenizer.pad_token = tokenizer.eos_token
 
     print("loading model ...")
-    model = AutoModelForCausalLM.from_pretrained(model_ckpt, use_auth_token=True).half().cuda().eval() #! add "half()" to fit in a smaller GPU
+    model = AutoModelForCausalLM.from_pretrained(model_ckpt, use_auth_token=True, trust_remote_code=True).half().cuda().eval() #! add "half()" to fit in a smaller GPU
     torch.set_default_tensor_type(torch.FloatTensor)
     print(f"Loaded in {time.time() - start_time:.2f} seconds")
     return model, tokenizer
