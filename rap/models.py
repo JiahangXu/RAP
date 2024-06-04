@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from typing import List
 
 import torch
 from vllm import SamplingParams
@@ -10,7 +11,7 @@ class QueryLM(ABC):
         pass
 
     @abstractmethod
-    def query_next_token(self, prompt: list[str]):
+    def query_next_token(self, prompt: List[str]):
         pass
 
 
@@ -36,12 +37,11 @@ class QueryVLLM(QueryLM):
         ret = torch.stack(ret, dim=0)
         dist = torch.softmax(ret, dim=-1)
         return dist
-    
 
     def query_LM(self, prompt, eos_token_id, num_return_sequences=1, do_sample=True, temperature=0.8):
         sampling_params = SamplingParams(temperature=temperature, n=num_return_sequences, max_tokens=self.max_response_length, stop_token_ids=[eos_token_id])
         completions = self.model.generate(prompt, sampling_params)
-        all_results = [prompt + output.text for output in completions[0].outputs]
+        all_results = [prompt + output.text + ("\n" if "\n" not in output.text else "") for output in completions[0].outputs]
 
         if self.log_file:
             with open(self.log_file, "a") as f:

@@ -11,7 +11,7 @@ from .mcts import MCTS, MCTSNode
 from .models import QueryLM
 
 
-def is_terminal_question(prompt, prompt_index):
+def is_terminal_question(prompt, prompt_index, overall_question=None):
     prompt = prompt.split('\n\n')[-1]
     if 'Now we can answer' in prompt:
         return True
@@ -19,6 +19,7 @@ def is_terminal_question(prompt, prompt_index):
     if f'Question {prompt_index}.' not in prompt:
         return False
     last_sub = prompt.split(f'Question {prompt_index}.')[-1].split('\n')[0]
+    # if (overall_question is not None and overall_question.lower() in last_sub.lower()) or last_sub.lower() in question.lower():
     if last_sub.lower() in question.lower():
         return True
     return False
@@ -30,7 +31,7 @@ class ReasoningMCTSNode(MCTSNode):
         return self._visited
 
     def __init__(self, prompt, question_prompt, gen_fn, reward_fn, depth, r1_default, r_alpha, prompt_index,
-                 parent: 'ReasoningMCTSNode' = None, r0=0.):
+                 parent: 'ReasoningMCTSNode' = None, r0=0., overall_question=None, random_temp_log=None, extract_answer_fn=None):
         self._conf = None
         self.children = []
         self.prompt = prompt
@@ -45,10 +46,31 @@ class ReasoningMCTSNode(MCTSNode):
         self._visited = False
         self.parent = parent
         self._prompt_index = prompt_index
+        self.overall_question = overall_question
+        self.random_temp_log = random_temp_log
+        self.extract_answer_fn = extract_answer_fn
 
     def _child_node(self, prompt, question_prompt, r0):
-        return ReasoningMCTSNode(prompt, question_prompt, self.gen_fn, self.reward_fn, self.depth + 1,
-                                 self._r1_default, self._r_alpha, self._prompt_index, parent=self, r0=r0)
+        child = ReasoningMCTSNode(prompt, question_prompt, self.gen_fn, self.reward_fn, self.depth + 1,
+                                 self._r1_default, self._r_alpha, self._prompt_index, parent=self, r0=r0,
+                                 overall_question=self.overall_question, random_temp_log=self.random_temp_log,
+                                 extract_answer_fn=self.extract_answer_fn)
+
+        # Output all terminal answer in MCTS rollouts
+        if self.random_temp_log is not None and is_terminal_question(child.prompt, child._prompt_index, child.overall_question):
+            warnings.warn('Ignore following warning ....')
+
+            node_temp = deepcopy(child)
+            node_temp.reward_fn = deepcopy(child.reward_fn)
+            ans_temp, _, _ = node_temp.reward_fn(node_temp.prompt, node_temp.depth)
+
+            ans_temp = ans_temp.split('\n\n')[-1].strip().split("\n")[-1]
+            # import pdb; pdb.set_trace()
+            with open(self.random_temp_log, 'a') as f:
+                f.write(self.extract_answer_fn(ans_temp) + "\n")
+            warnings.warn('Ignore above warning ...')
+
+        return child
 
     def _get_children(self):
         self._visited = True
@@ -71,7 +93,7 @@ class ReasoningMCTSNode(MCTSNode):
         self.prompt, self._r1, self._ans_list = self.reward_fn(self.prompt, self.depth)
 
     def _static_terminal(self):
-        return is_terminal_question(self.prompt, self._prompt_index)
+        return is_terminal_question(self.prompt, self._prompt_index, self.overall_question)
 
     @property
     def is_terminal(self):
@@ -105,10 +127,11 @@ class ReasoningMCTSNode(MCTSNode):
         if self.parent is not None:
             if file is not None:
                 pprint(prefix + answer)
-            match = re.match('.*The answer is (.*)\\.', answer)
+            # import pdb; pdb.set_trace()
+            match = self.extract_answer_fn(answer)
             if match is not None:
                 term = '\u25A1' if self.is_terminal else ''
-                pprint(prefix + f'answer: {match[1]} ; ans_list: {self._ans_list} ; r1 : {self._r1:.3f}{term}')
+                pprint(prefix + f'answer: {match} ; ans_list: {self._ans_list} ; r1 : {self._r1:.3f}{term}')
             # if not self.is_terminal:
             #     pprint(prefix + f'conf_list : {self._conf_list} ; r2 : {self._r2:.3f}')
         for child in self.children:
@@ -141,10 +164,20 @@ def reasoning_mcts_search(question: str,
                           r_alpha,
                           r1_default,
                           eos_token_id,
-                          speedup_confidence_batch_size=None):
+                          speedup_confidence_batch_size=None,
+                          task=None,
+                          extract_answer_fn=None,
+                          output_ans_list=False,
+                          random_temp_log=None,):
+    if output_ans_list: assert random_temp_log is not None
+    if not output_ans_list: random_temp_log = None
+
     if speedup_confidence_batch_size is None:
         speedup_confidence_batch_size = n_sample_confidence
-    overall_question = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)[1]
+    if task in ["gsm8k", "math"]:
+        overall_question = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)[1]
+    else:
+        import pdb; pdb.set_trace()
     overall_question = overall_question[0].upper() + overall_question[1:]
     prompt_index = prompts['index']
 
@@ -159,7 +192,7 @@ def reasoning_mcts_search(question: str,
             agent_output = world_model.query_LM(agent_input, do_sample=True, num_return_sequences=n_sample_subquestion,
                                                 eos_token_id=eos_token_id, temperature=temperature)
             for i, output in enumerate(agent_output):
-                if is_terminal_question(output, prompt_index):
+                if is_terminal_question(output, prompt_index, overall_question):
                     agent_output[i] = overall_question_output
 
         # unique the output
@@ -195,10 +228,10 @@ def reasoning_mcts_search(question: str,
             sampled += speedup_confidence_batch_size
             for output in world_output:
                 result = output.strip().split('\n')[-1]
-                match = re.match(r'.*The answer is .*?([ $.0-9,\-]+).*\.$', result)
-                if match is None:
+                # import pdb; pdb.set_trace()
+                sub_answer = extract_answer_fn(result)
+                if sub_answer is None:
                     continue
-                sub_answer = match[1].replace(',', '').replace('$', '').replace(' ', '')
                 answer_dict[sub_answer].append(output)
                 answer_list.append(sub_answer)
             if len(answer_dict) == 0:
@@ -227,7 +260,8 @@ def reasoning_mcts_search(question: str,
 
     mcts = MCTS(w_exp=w_exp, prior=True, aggr_reward='mean', aggr_child='max')
     root = ReasoningMCTSNode(input_prompts, input_question_prompts, gen_fn, reward_fn,
-                             depth=1, r1_default=r1_default, r_alpha=r_alpha, prompt_index=prompt_index)
+                             depth=1, r1_default=r1_default, r_alpha=r_alpha, prompt_index=prompt_index,
+                             overall_question=overall_question, random_temp_log=random_temp_log, extract_answer_fn=extract_answer_fn)
     trajs = []
     trees = []
     for _ in (pbar := trange(mcts_rollouts, disable=bool(int(os.environ.get("LOCAL_RANK", -1))), position=0)):
@@ -235,11 +269,10 @@ def reasoning_mcts_search(question: str,
         root.print(mcts)
         max_n, max_r = mcts.max_mean_terminal(root)
         trajs.append(traj := max_n.prompt.split('\n\n')[-1])
-        output = re.findall('The answer is (.+).*\\.', traj)
-        if len(output) == 0:
+        # import pdb; pdb.set_trace()
+        temp_r = extract_answer_fn(traj.strip().split("\n")[-1])
+        if temp_r == None:
             temp_r = 'not found'
-        else:
-            temp_r = output[-1].replace(',', '')
         pbar.set_description(f'{max_r:.3f} {temp_r}')
         tree_copy = deepcopy(root)
         tree_copy.Q = dict(mcts.Q)
@@ -247,7 +280,16 @@ def reasoning_mcts_search(question: str,
         tree_copy.M = dict(mcts.M)
         trees.append(tree_copy)
 
+    ans_list = []
+    if output_ans_list:
+        try:
+            with open(random_temp_log, 'r') as f:
+                ans_list = [item.strip() for item in f.readlines()]
+            os.system(f"rm {random_temp_log}")
+        except:
+            pass
+
     with io.StringIO() as f:
         root.print(mcts, file=f)
         tree = f.getvalue()
-    return trajs, tree, trees
+    return trajs, tree, trees, ans_list
