@@ -66,8 +66,10 @@ class ReasoningMCTSNode(MCTSNode):
 
             ans_temp = ans_temp.split('\n\n')[-1].strip().split("\n")[-1]
             # import pdb; pdb.set_trace()
-            with open(self.random_temp_log, 'a') as f:
-                f.write(self.extract_answer_fn(ans_temp) + "\n")
+            t = self.extract_answer_fn(ans_temp)
+            if t is not None:
+                with open(self.random_temp_log, 'a') as f:
+                    f.write(t + "\n")
             warnings.warn('Ignore above warning ...')
 
         return child
@@ -175,9 +177,20 @@ def reasoning_mcts_search(question: str,
     if speedup_confidence_batch_size is None:
         speedup_confidence_batch_size = n_sample_confidence
     if task in ["gsm8k", "math"]:
-        overall_question = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)[1]
-    else:
-        import pdb; pdb.set_trace()
+        match = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)
+        overall_question = match[1] if match else question
+    elif task == "folio":
+        overall_question = question.split("Based on the above information, is the following statement true, false, or uncertain?")[-1].strip()
+    elif task == "logiqa":
+        try:
+            t = question.split(" (A) ")[0].split(".")
+            overall_question = t[-1] if t[-1] != "" else t[-2]
+            if not overall_question.strip().startswith("Which"):
+                match = re.match('.*((Which|which).*)$', overall_question)
+                overall_question = match[1] if match else overall_question
+            overall_question = overall_question.strip()
+        except:
+            overall_question = question
     overall_question = overall_question[0].upper() + overall_question[1:]
     prompt_index = prompts['index']
 

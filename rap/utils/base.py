@@ -227,6 +227,8 @@ class Evaluator:
         raise NotImplementedError
     
     def judge_answer(self, completion: str, gold_solution: str) -> bool:
+        if completion is None:
+            return None, False
         is_number, _ = self._is_number(completion)
         if is_number:
             return completion, self.check_answers_equiv(completion, gold_solution)

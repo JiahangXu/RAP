@@ -1,3 +1,4 @@
+import json
 from .base import Evaluator
 
 class FOLIOEvaluator(Evaluator):
@@ -31,3 +32,14 @@ class FOLIOEvaluator(Evaluator):
     
         return self._format_answer(answer) 
 
+
+def get_folio_dataset(split):
+    with open(f'data/folio/{split}.json') as f:
+        examples = json.load(f)
+
+    for ex in examples:
+        ex.update(question=ex["problem"] + "\n")
+        ex.update(answer=FOLIOEvaluator().extract_answer_from_gold_solution(ex["solution"]))
+
+    print(f"{len(examples)} {split} examples")
+    return examples

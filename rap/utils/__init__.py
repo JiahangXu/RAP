@@ -1,7 +1,7 @@
 from .gsm8k import GSM8KEvaluator, get_gsm8k_dataset
-from .folio import FOLIOEvaluator
+from .folio import FOLIOEvaluator, get_folio_dataset
 from .math import MATHEvaluator, get_math_dataset
-from .logiqa import LOGIQAEvaluator
+from .logiqa import LOGIQAEvaluator, get_logiqa_dataset
 
 def get_evaluator(task):
     if task == 'gsm8k':
@@ -26,6 +26,12 @@ def get_one_dataset(task):
         return get_gsm8k_dataset
     elif task == 'math':
         return get_math_dataset
+    elif task == "logiqa":
+        return get_logiqa_dataset
+    elif task == 'folio':
+        return get_folio_dataset
+    else:
+        raise NotImplementedError(f"Task {task} not implemented yet")
     # if task == 'gsm8k':
     #     evaluator = GSM8KEvaluator()
     #     return evaluator.judge_answer

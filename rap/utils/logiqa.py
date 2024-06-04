@@ -1,3 +1,4 @@
+import json
 from .base import Evaluator
 
 class LOGIQAEvaluator(Evaluator):
@@ -50,3 +51,14 @@ class LOGIQAEvaluator(Evaluator):
         except:
             return None
     
+
+def get_logiqa_dataset(split):
+    with open(f'data/logiqa/{split}.json') as f:
+        examples = json.load(f)
+
+    for ex in examples:
+        ex.update(question=ex["problem"] + "\n")
+        ex.update(answer=ex["solution"])
+
+    print(f"{len(examples)} {split} examples")
+    return examples
