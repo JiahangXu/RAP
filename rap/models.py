@@ -39,7 +39,7 @@ class QueryVLLM(QueryLM):
         return dist
 
     def query_LM(self, prompt, eos_token_id, num_return_sequences=1, do_sample=True, temperature=0.8):
-        sampling_params = SamplingParams(temperature=temperature, n=num_return_sequences, max_tokens=self.max_response_length, stop_token_ids=[eos_token_id])
+        sampling_params = SamplingParams(temperature=temperature, n=num_return_sequences, max_tokens=self.max_response_length, stop_token_ids=[eos_token_id], stop="\n")
         completions = self.model.generate(prompt, sampling_params)
         all_results = [prompt + output.text + ("\n" if "\n" not in output.text else "") for output in completions[0].outputs]
 

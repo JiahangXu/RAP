@@ -79,10 +79,10 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
     if log_dir is None:
         if model_ckpt.endswith("/"):
             model_ckpt = model_ckpt[:-1]
-        log_dir = f'logs/gsm8k_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
+        log_dir = f'logs/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
     os.makedirs(log_dir, exist_ok=True)
     if output_ans_list:
-        log_dir2 = f'logs/rap/{model_ckpt.split("/")[-1]}/'
+        log_dir2 = f'logs/rap/{task}/{model_ckpt.split("/")[-1]}/'
         os.makedirs(log_dir2, exist_ok=True)
 
     judge_answer = get_judge_answer(task)
