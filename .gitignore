@@ -5,3 +5,7 @@ logs/
 gpt_sas_plan
 outputs/
 *.pyc
+gsm8k_1.txt
+itp/.tmp/
+mlruns/
+*.txt

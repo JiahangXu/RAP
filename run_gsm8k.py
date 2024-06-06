@@ -16,12 +16,14 @@ import fire
 import time
 import json
 import random
+import mlflow
 import numpy as np
 from pathlib import Path
 from tqdm import tqdm
 from collections import Counter
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
+mlflow.autolog()
 
 def load_hf(model_ckpt):
     start_time = time.time()
@@ -65,7 +67,7 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
               question_prompts=None,
               max_batch_size=2,
               max_response_length=200,
-              mcts_rollouts=32,
+              mcts_rollouts=10,
               n_sample_subquestion=4,
               n_sample_confidence=8,
               temperature=0.8,
@@ -77,14 +79,22 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
               log_dir=None,
               speedup_confidence_batch_size=None,
               output_ans_list=False,
-              disable_tqdm=False):
+              disable_tqdm=False,
+              sing=True):
     if log_dir is None:
         if model_ckpt.endswith("/"):
             model_ckpt = model_ckpt[:-1]
-        log_dir = f'logs/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
+        if sing:
+            log_dir = f'/mnt/teamdrive/jiahang_temp/RAP/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
+        else:
+            log_dir = f'logs/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
+        
     os.makedirs(log_dir, exist_ok=True)
     if output_ans_list:
-        log_dir2 = f'logs/rap/{task}/{model_ckpt.split("/")[-1]}/'
+        if sing:
+            log_dir2 = f'/mnt/teamdrive/jiahang_temp/RAP/rap/{task}/{model_ckpt.split("/")[-1]}/'
+        else:
+            log_dir2 = f'logs/rap/{task}/{model_ckpt.split("/")[-1]}/'
         os.makedirs(log_dir2, exist_ok=True)
 
     judge_answer = get_judge_answer(task)
@@ -180,11 +190,15 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
                         json.dump(example_res_sum, f, indent=2)
 
                 tqdm.write(' '.join(f'{c/(i+1-resume):0.3f}' for c in total_correct))
-                desc = f'acc: {total_correct[-1]}/{i+1-resume}={total_correct[-1]/(i+1-resume):.2f}'
+                desc = f'acc: {total_correct[-1]}/{i+1-resume}={total_correct[-1]/(i+1-resume)*100:.3f}'
                 if output_ans_list:
-                    desc += f", model_limit: {total_model_limit_correct}/{i+1-resume}={total_model_limit_correct/(i+1-resume):.2f}, " + \
-                            f"major_vote: {total_major_vote_correct}/{i+1-resume}={total_major_vote_correct/(i+1-resume):.2f}"
+                    desc += f", model_limit: {total_model_limit_correct}/{i+1-resume}={total_model_limit_correct/(i+1-resume)*100:.3f}, " + \
+                            f"major_vote: {total_major_vote_correct}/{i+1-resume}={total_major_vote_correct/(i+1-resume)*100:.3f}"
                 pbar.set_description(desc)
+                mlflow.log_metric("acc", total_correct[-1]/(i+1-resume)*100)
+                if output_ans_list:
+                    mlflow.log_metric("model_limit_acc", total_model_limit_correct/(i+1-resume)*100)
+                    mlflow.log_metric("major_vote_acc", total_major_vote_correct/(i+1-resume)*100)
         except Exception as e:
             print(f"Error in example {example['id']}: {e}")
 

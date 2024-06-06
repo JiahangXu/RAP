@@ -30,13 +30,19 @@ class MATHEvaluator(Evaluator):
         if is_number_a and is_number_b:
             return number_a == number_b
 
-        return latex_answer_check(
-            answer_a,
-            answer_b,
-            split=None,
-            extract_policy="flex",
-            eval_policy="aggressive",
-        )
+        try:
+            res = latex_answer_check(
+                answer_a,
+                answer_b,
+                split=None,
+                extract_policy="flex",
+                eval_policy="aggressive",
+            )
+        except Exception as e:
+            print(e)
+            res = False
+
+        return res
 
     def extract_answer_from_gold_solution(self, solution: str):
         def remove_boxed(s):

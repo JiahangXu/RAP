@@ -2,6 +2,8 @@ from .gsm8k import GSM8KEvaluator, get_gsm8k_dataset
 from .folio import FOLIOEvaluator, get_folio_dataset
 from .math import MATHEvaluator, get_math_dataset
 from .logiqa import LOGIQAEvaluator, get_logiqa_dataset
+from .sat import SATEvaluator, get_sat_dataset
+from .svamp import SVAMPEvaluator, get_svamp_dataset
 
 def get_evaluator(task):
     if task == 'gsm8k':
@@ -12,6 +14,10 @@ def get_evaluator(task):
         return MATHEvaluator()
     elif task == 'logiqa':
         return LOGIQAEvaluator()
+    elif task == 'sat':
+        return SATEvaluator()
+    elif task == 'svamp':
+        return SVAMPEvaluator()
 
 def get_judge_answer(task):
     evaluator = get_evaluator(task)
@@ -30,8 +36,9 @@ def get_one_dataset(task):
         return get_logiqa_dataset
     elif task == 'folio':
         return get_folio_dataset
+    elif task == 'sat':
+        return get_sat_dataset
+    elif task == 'svamp':
+        return get_svamp_dataset
     else:
         raise NotImplementedError(f"Task {task} not implemented yet")
-    # if task == 'gsm8k':
-    #     evaluator = GSM8KEvaluator()
-    #     return evaluator.judge_answer

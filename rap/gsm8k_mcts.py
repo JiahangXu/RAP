@@ -67,9 +67,11 @@ class ReasoningMCTSNode(MCTSNode):
             ans_temp = ans_temp.split('\n\n')[-1].strip().split("\n")[-1]
             # import pdb; pdb.set_trace()
             t = self.extract_answer_fn(ans_temp)
-            if t is not None:
-                with open(self.random_temp_log, 'a') as f:
+            with open(self.random_temp_log, 'a') as f:
+                if t is not None:
                     f.write(t + "\n")
+                else:
+                    f.write("None\n")
             warnings.warn('Ignore above warning ...')
 
         return child
@@ -176,7 +178,7 @@ def reasoning_mcts_search(question: str,
 
     if speedup_confidence_batch_size is None:
         speedup_confidence_batch_size = n_sample_confidence
-    if task in ["gsm8k", "math"]:
+    if task in ["gsm8k", "math", "svamp"]:
         match = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)
         overall_question = match[1] if match else question
     elif task == "folio":
@@ -191,6 +193,9 @@ def reasoning_mcts_search(question: str,
             overall_question = overall_question.strip()
         except:
             overall_question = question
+    elif task == "sat":
+        match = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question.split(" A.")[0])
+        overall_question = match[1] if match else question.split(" A. ")[0]
     overall_question = overall_question[0].upper() + overall_question[1:]
     prompt_index = prompts['index']
 
