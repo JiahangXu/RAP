@@ -1,0 +1,1472 @@
+[
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The rhino invests in the company whose owner is the ostrich. The wolf surrenders to the swan. The swallow does not acquire a photograph of the swan. And the rules of the game are as follows. Rule1: For the swan, if you have two pieces of evidence 1) the wolf surrenders to the swan and 2) the swallow does not acquire a photo of the swan, then you can add swan swears to the woodpecker to your conclusions. Based on the game state and the rules and preferences, does the swan swear to the woodpecker?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch surrenders to the beaver. And the rules of the game are as follows. Rule1: There exists an animal which surrenders to the beaver? Then, the crow definitely does not tear down the castle of the dolphin. Based on the game state and the rules and preferences, does the crow tear down the castle that belongs to the dolphin?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita has 86 dollars. The flamingo has 78 dollars. The german shepherd has 8 dollars. And the rules of the game are as follows. Rule1: If the flamingo has more money than the akita and the german shepherd combined, then the flamingo calls the bear. Based on the game state and the rules and preferences, does the flamingo call the bear?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-3",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dalmatian captures the king of the badger. The pelikan neglects the badger. The woodpecker hugs the badger. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the pelikan neglects the badger, then the badger will, without hesitation, fall on a square that belongs to the mouse. Based on the game state and the rules and preferences, does the badger fall on a square of the mouse?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The flamingo has 5 dollars. The ostrich has 66 dollars. The stork has 15 dollars. And the rules of the game are as follows. Rule1: If the ostrich has fewer than five friends, then the ostrich refuses to help the coyote. Rule2: Here is an important piece of information about the ostrich: if it has more money than the flamingo and the stork combined then it does not refuse to help the coyote for sure. Rule1 is preferred over Rule2. Based on the game state and the rules and preferences, does the ostrich refuse to help the coyote?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-5",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mermaid has a football with a radius of 23 inches, and is watching a movie from 1966. The mermaid hides the cards that she has from the flamingo. And the rules of the game are as follows. Rule1: Here is an important piece of information about the mermaid: if it has a basketball that fits in a 37.6 x 34.3 x 31.3 inches box then it suspects the truthfulness of the goat for sure. Rule2: If something does not stop the victory of the flamingo, then it does not suspect the truthfulness of the goat. Rule3: The mermaid will suspect the truthfulness of the goat if it (the mermaid) is watching a movie that was released after Richard Nixon resigned. Rule1 is preferred over Rule2. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the mermaid suspect the truthfulness of the goat?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-6",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dalmatian hugs the dolphin but does not suspect the truthfulness of the woodpecker. And the rules of the game are as follows. Rule1: If you see that something hugs the dolphin but does not suspect the truthfulness of the woodpecker, what can you certainly conclude? You can conclude that it manages to convince the swan. Rule2: Regarding the dalmatian, if it has a card whose color starts with the letter \"r\", then we can conclude that it does not manage to persuade the swan. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the dalmatian manage to convince the swan?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-7",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bee has 9 dollars. The dragon leaves the houses occupied by the liger. The shark has 48 dollars. The vampire is currently in Cape Town. And the rules of the game are as follows. Rule1: Regarding the vampire, if it has more money than the shark and the bee combined, then we can conclude that it disarms the bulldog. Rule2: There exists an animal which leaves the houses that are occupied by the liger? Then, the vampire definitely does not disarm the bulldog. Rule3: Regarding the vampire, if it is in France at the moment, then we can conclude that it disarms the bulldog. Rule1 is preferred over Rule2. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the vampire disarm the bulldog?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crow is named Luna. The monkey is named Blossom, and struggles to find food. And the rules of the game are as follows. Rule1: If you are positive that you saw one of the animals unites with the husky, you can be certain that it will not pay money to the rhino. Rule2: Regarding the monkey, if it has a name whose first letter is the same as the first letter of the crow's name, then we can conclude that it pays money to the rhino. Rule3: Regarding the monkey, if it has access to an abundance of food, then we can conclude that it pays money to the rhino. Rule2 is preferred over Rule1. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the monkey pay money to the rhino?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-9",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The frog has thirteen friends. And the rules of the game are as follows. Rule1: If the frog has more than 4 friends, then the frog enjoys the company of the crow. Based on the game state and the rules and preferences, does the frog enjoy the company of the crow?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dachshund has a card that is red in color. And the rules of the game are as follows. Rule1: The dachshund will not refuse to help the mouse if it (the dachshund) has a card with a primary color. Based on the game state and the rules and preferences, does the dachshund refuse to help the mouse?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-11",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The leopard pays money to the dolphin. The leopard does not take over the emperor of the finch. And the rules of the game are as follows. Rule1: If you see that something does not refuse to help the finch but it pays some $$$ to the dolphin, what can you certainly conclude? You can conclude that it also trades one of the pieces in its possession with the cobra. Based on the game state and the rules and preferences, does the leopard trade one of its pieces with the cobra?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch unites with the stork. And the rules of the game are as follows. Rule1: The stork unquestionably swims in the pool next to the house of the starling, in the case where the finch unites with the stork. Rule2: If at least one animal swims inside the pool located besides the house of the wolf, then the stork does not swim in the pool next to the house of the starling. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the stork swim in the pool next to the house of the starling?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The german shepherd neglects the vampire. The starling unites with the elk. The husky does not want to see the elk. And the rules of the game are as follows. Rule1: The elk does not swim in the pool next to the house of the mule whenever at least one animal neglects the vampire. Based on the game state and the rules and preferences, does the elk swim in the pool next to the house of the mule?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth1-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crow has a bench. The crow is a farm worker. And the rules of the game are as follows. Rule1: Here is an important piece of information about the crow: if it has a sharp object then it falls on a square that belongs to the wolf for sure. Rule2: The crow does not fall on a square of the wolf whenever at least one animal manages to persuade the seahorse. Rule3: Regarding the crow, if it works in computer science and engineering, then we can conclude that it falls on a square of the wolf. Rule1 is preferred over Rule2. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the crow fall on a square of the wolf?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bear is currently in Berlin. And the rules of the game are as follows. Rule1: Regarding the bear, if it is in Germany at the moment, then we can conclude that it does not pay money to the seal. Rule2: The seal unquestionably creates one castle for the wolf, in the case where the bear does not pay money to the seal. Based on the game state and the rules and preferences, does the seal create one castle for the wolf?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The pelikan creates one castle for the seahorse. The pigeon has a cell phone. And the rules of the game are as follows. Rule1: Here is an important piece of information about the pigeon: if it has a device to connect to the internet then it neglects the cobra for sure. Rule2: For the cobra, if the belief is that the pigeon neglects the cobra and the pelikan hides the cards that she has from the cobra, then you can add that \"the cobra is not going to manage to persuade the gadwall\" to your conclusions. Rule3: From observing that one animal creates a castle for the seahorse, one can conclude that it also hides her cards from the cobra, undoubtedly. Based on the game state and the rules and preferences, does the cobra manage to convince the gadwall?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dinosaur neglects the owl. The owl has a football with a radius of 29 inches, and is watching a movie from 2008. And the rules of the game are as follows. Rule1: If you see that something destroys the wall built by the stork but does not reveal a secret to the starling, what can you certainly conclude? You can conclude that it unites with the woodpecker. Rule2: Regarding the owl, if it is watching a movie that was released before Facebook was founded, then we can conclude that it pays money to the stork. Rule3: The owl does not reveal something that is supposed to be a secret to the starling, in the case where the dinosaur neglects the owl. Rule4: If the owl has a football that fits in a 65.9 x 67.9 x 66.1 inches box, then the owl pays money to the stork. Based on the game state and the rules and preferences, does the owl unite with the woodpecker?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-3",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The gadwall suspects the truthfulness of the dragonfly. The gadwall suspects the truthfulness of the liger. And the rules of the game are as follows. Rule1: If you are positive that you saw one of the animals falls on a square that belongs to the elk, you can be certain that it will also tear down the castle of the coyote. Rule2: If something suspects the truthfulness of the dragonfly and suspects the truthfulness of the liger, then it falls on a square that belongs to the elk. Based on the game state and the rules and preferences, does the gadwall tear down the castle that belongs to the coyote?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The poodle has a card that is orange in color. The poodle is currently in Toronto. And the rules of the game are as follows. Rule1: The beetle will not hug the chinchilla, in the case where the poodle does not reveal a secret to the beetle. Rule2: Here is an important piece of information about the poodle: if it has a card whose color is one of the rainbow colors then it does not reveal something that is supposed to be a secret to the beetle for sure. Rule3: Here is an important piece of information about the poodle: if it is in Turkey at the moment then it does not reveal a secret to the beetle for sure. Based on the game state and the rules and preferences, does the beetle hug the chinchilla?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-5",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch surrenders to the mouse. The stork creates one castle for the mouse. And the rules of the game are as follows. Rule1: If you are positive that one of the animals does not unite with the shark, you can be certain that it will fall on a square of the crab without a doubt. Rule2: For the mouse, if the belief is that the finch surrenders to the mouse and the stork creates one castle for the mouse, then you can add \"the mouse unites with the shark\" to your conclusions. Based on the game state and the rules and preferences, does the mouse fall on a square of the crab?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-6",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch is watching a movie from 1993. The mule pays money to the finch. And the rules of the game are as follows. Rule1: Be careful when something neglects the dolphin and also acquires a photograph of the songbird because in this case it will surely hide the cards that she has from the dragon (this may or may not be problematic). Rule2: The finch unquestionably acquires a photograph of the songbird, in the case where the mule pays some $$$ to the finch. Rule3: Regarding the finch, if it is watching a movie that was released before Shaquille O'Neal retired, then we can conclude that it neglects the dolphin. Based on the game state and the rules and preferences, does the finch hide the cards that she has from the dragon?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-7",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The rhino has a basketball with a diameter of 19 inches, and has seven friends that are playful and two friends that are not. And the rules of the game are as follows. Rule1: If the rhino does not bring an oil tank for the swan, then the swan does not stop the victory of the cobra. Rule2: The rhino will not bring an oil tank for the swan if it (the rhino) has fewer than six friends. Rule3: The rhino will not bring an oil tank for the swan if it (the rhino) has a basketball that fits in a 25.7 x 23.8 x 23.8 inches box. Based on the game state and the rules and preferences, does the swan stop the victory of the cobra?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The frog has a card that is white in color. And the rules of the game are as follows. Rule1: Regarding the frog, if it has a card whose color appears in the flag of Netherlands, then we can conclude that it builds a power plant near the green fields of the goose. Rule2: The living creature that does not build a power plant close to the green fields of the goose will leave the houses that are occupied by the ostrich with no doubts. Based on the game state and the rules and preferences, does the frog leave the houses occupied by the ostrich?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-9",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The badger has 4 friends, and has a 20 x 14 inches notebook. And the rules of the game are as follows. Rule1: The badger will take over the emperor of the shark if it (the badger) has a notebook that fits in a 10.9 x 10.9 inches box. Rule2: This is a basic rule: if the badger takes over the emperor of the shark, then the conclusion that \"the shark hugs the flamingo\" follows immediately and effectively. Rule3: The badger will take over the emperor of the shark if it (the badger) has fewer than twelve friends. Based on the game state and the rules and preferences, does the shark hug the flamingo?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dragonfly does not trade one of its pieces with the mouse. And the rules of the game are as follows. Rule1: This is a basic rule: if the dragonfly does not hug the beaver, then the conclusion that the beaver will not pay some $$$ to the beetle follows immediately and effectively. Rule2: If you are positive that one of the animals does not trade one of the pieces in its possession with the mouse, you can be certain that it will not hug the beaver. Based on the game state and the rules and preferences, does the beaver pay money to the beetle?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-11",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The gorilla captures the king of the badger but does not unite with the bison. And the rules of the game are as follows. Rule1: If you see that something unites with the bison and captures the king of the badger, what can you certainly conclude? You can conclude that it also dances with the mermaid. Rule2: This is a basic rule: if the gorilla dances with the mermaid, then the conclusion that \"the mermaid falls on a square that belongs to the seahorse\" follows immediately and effectively. Based on the game state and the rules and preferences, does the mermaid fall on a square of the seahorse?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The coyote is a grain elevator operator. The owl builds a power plant near the green fields of the chinchilla. And the rules of the game are as follows. Rule1: Here is an important piece of information about the coyote: if it works in agriculture then it trades one of its pieces with the butterfly for sure. Rule2: If at least one animal builds a power plant near the green fields of the chinchilla, then the coyote swims in the pool next to the house of the german shepherd. Rule3: Are you certain that one of the animals trades one of the pieces in its possession with the butterfly and also at the same time swims inside the pool located besides the house of the german shepherd? Then you can also be certain that the same animal brings an oil tank for the songbird. Based on the game state and the rules and preferences, does the coyote bring an oil tank for the songbird?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The monkey wants to see the flamingo. And the rules of the game are as follows. Rule1: There exists an animal which creates a castle for the seahorse? Then, the cougar definitely does not hug the peafowl. Rule2: The flamingo unquestionably creates a castle for the seahorse, in the case where the monkey wants to see the flamingo. Based on the game state and the rules and preferences, does the cougar hug the peafowl?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "ZeroConflict-depth2-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cougar does not acquire a photograph of the peafowl, and does not dance with the ostrich. And the rules of the game are as follows. Rule1: If you see that something does not acquire a photo of the peafowl and also does not dance with the ostrich, what can you certainly conclude? You can conclude that it also swims in the pool next to the house of the beaver. Rule2: If at least one animal surrenders to the beaver, then the elk suspects the truthfulness of the dalmatian. Based on the game state and the rules and preferences, does the elk suspect the truthfulness of the dalmatian?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The zebra has 15 friends, and lost her keys. And the rules of the game are as follows. Rule1: If you are positive that you saw one of the animals reveals a secret to the seahorse, you can be certain that it will not refuse to help the mouse. Rule2: There exists an animal which negotiates a deal with the bee? Then the dachshund definitely reveals a secret to the seahorse. Rule3: The zebra will negotiate a deal with the bee if it (the zebra) does not have her keys. Based on the game state and the rules and preferences, does the dachshund refuse to help the mouse?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-20",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The starling reveals a secret to the dragon, and wants to see the pelikan. And the rules of the game are as follows. Rule1: Are you certain that one of the animals wants to see the pelikan and also at the same time reveals something that is supposed to be a secret to the dragon? Then you can also be certain that the same animal captures the king (i.e. the most important piece) of the leopard. Rule2: If something does not capture the king (i.e. the most important piece) of the leopard, then it swims in the pool next to the house of the chinchilla. Rule3: If there is evidence that one animal, no matter which one, swims inside the pool located besides the house of the chinchilla, then the husky wants to see the bee undoubtedly. Based on the game state and the rules and preferences, does the husky want to see the bee?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-33",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bear assassinated the mayor, and has a football with a radius of 30 inches. And the rules of the game are as follows. Rule1: If the bear has a football that fits in a 62.1 x 62.8 x 68.9 inches box, then the bear refuses to help the reindeer. Rule2: Regarding the bear, if it voted for the mayor, then we can conclude that it refuses to help the reindeer. Rule3: This is a basic rule: if the pelikan does not reveal something that is supposed to be a secret to the worm, then the conclusion that the worm disarms the beetle follows immediately and effectively. Rule4: If there is evidence that one animal, no matter which one, refuses to help the reindeer, then the pelikan is not going to reveal something that is supposed to be a secret to the worm. Based on the game state and the rules and preferences, does the worm disarm the beetle?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-34",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cougar pays money to the duck. The seahorse calls the duck. And the rules of the game are as follows. Rule1: The dachshund does not swear to the seahorse whenever at least one animal wants to see the leopard. Rule2: The living creature that does not swear to the seahorse will never manage to persuade the woodpecker. Rule3: For the duck, if the belief is that the seahorse calls the duck and the cougar pays money to the duck, then you can add \"the duck wants to see the leopard\" to your conclusions. Rule4: One of the rules of the game is that if the zebra does not unite with the duck, then the duck will never want to see the leopard. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the dachshund manage to convince the woodpecker?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-48",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beetle falls on a square of the akita. The shark does not swear to the akita. And the rules of the game are as follows. Rule1: If at least one animal swims in the pool next to the house of the seal, then the mouse builds a power plant near the green fields of the liger. Rule2: If something does not tear down the castle that belongs to the duck, then it swims in the pool next to the house of the seal. Rule3: In order to conclude that the akita does not tear down the castle of the duck, two pieces of evidence are required: firstly that the shark will not swear to the akita and secondly the beetle falls on a square that belongs to the akita. Based on the game state and the rules and preferences, does the mouse build a power plant near the green fields of the liger?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-63",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mouse takes over the emperor of the elk. And the rules of the game are as follows. Rule1: If at least one animal takes over the emperor of the elk, then the gorilla destroys the wall built by the dragonfly. Rule2: This is a basic rule: if the gorilla destroys the wall built by the dragonfly, then the conclusion that \"the dragonfly tears down the castle that belongs to the vampire\" follows immediately and effectively. Rule3: If you are positive that you saw one of the animals tears down the castle that belongs to the vampire, you can be certain that it will also shout at the goose. Based on the game state and the rules and preferences, does the dragonfly shout at the goose?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-64",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The peafowl has 17 friends. The peafowl stole a bike from the store. And the rules of the game are as follows. Rule1: The peafowl will leave the houses occupied by the lizard if it (the peafowl) took a bike from the store. Rule2: If at least one animal leaves the houses occupied by the lizard, then the swan does not call the dragonfly. Rule3: If something does not call the dragonfly, then it does not borrow one of the weapons of the fangtooth. Rule4: Here is an important piece of information about the peafowl: if it has fewer than eight friends then it leaves the houses occupied by the lizard for sure. Rule5: The swan unquestionably calls the dragonfly, in the case where the bear manages to convince the swan. Rule5 is preferred over Rule2. Based on the game state and the rules and preferences, does the swan borrow one of the weapons of the fangtooth?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-91",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The zebra is currently in Marseille. And the rules of the game are as follows. Rule1: Regarding the zebra, if it is in France at the moment, then we can conclude that it captures the king (i.e. the most important piece) of the leopard. Rule2: If at least one animal hugs the stork, then the reindeer does not hide her cards from the monkey. Rule3: From observing that one animal builds a power plant near the green fields of the camel, one can conclude that it also hides the cards that she has from the monkey, undoubtedly. Rule4: This is a basic rule: if the zebra captures the king of the leopard, then the conclusion that \"the leopard hugs the stork\" follows immediately and effectively. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the reindeer hide the cards that she has from the monkey?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-101",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dragon tears down the castle that belongs to the mule but does not build a power plant near the green fields of the seahorse. And the rules of the game are as follows. Rule1: This is a basic rule: if the gadwall reveals a secret to the cobra, then the conclusion that \"the cobra enjoys the companionship of the walrus\" follows immediately and effectively. Rule2: One of the rules of the game is that if the dragon manages to convince the gadwall, then the gadwall will, without hesitation, reveal a secret to the cobra. Rule3: Be careful when something does not build a power plant close to the green fields of the seahorse but calls the mule because in this case it will, surely, manage to persuade the gadwall (this may or may not be problematic). Based on the game state and the rules and preferences, does the cobra enjoy the company of the walrus?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-104",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dinosaur is currently in Antalya. The otter enjoys the company of the cougar. And the rules of the game are as follows. Rule1: The living creature that refuses to help the finch will also stop the victory of the husky, without a doubt. Rule2: If you are positive that you saw one of the animals swims in the pool next to the house of the cougar, you can be certain that it will also refuse to help the finch. Rule3: Here is an important piece of information about the dinosaur: if it is in Turkey at the moment then it does not borrow one of the weapons of the otter for sure. Rule4: If something stops the victory of the husky, then it wants to see the elk, too. Rule5: The otter does not want to see the elk whenever at least one animal disarms the dragon. Rule4 is preferred over Rule5. Based on the game state and the rules and preferences, does the otter want to see the elk?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-108",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The gadwall calls the mule. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, unites with the fangtooth, then the ant invests in the company owned by the badger undoubtedly. Rule2: From observing that one animal invests in the company whose owner is the badger, one can conclude that it also dances with the elk, undoubtedly. Rule3: If there is evidence that one animal, no matter which one, calls the mule, then the snake unites with the fangtooth undoubtedly. Rule4: If something does not acquire a photograph of the duck, then it does not unite with the fangtooth. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the ant dance with the elk?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-121",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The ostrich is currently in Frankfurt, and was born 4 and a half years ago. And the rules of the game are as follows. Rule1: If the ostrich is in Germany at the moment, then the ostrich calls the dragonfly. Rule2: The mule does not shout at the finch whenever at least one animal acquires a photo of the lizard. Rule3: From observing that one animal calls the dragonfly, one can conclude that it also acquires a photograph of the lizard, undoubtedly. Rule4: The ostrich will call the dragonfly if it (the ostrich) is less than two years old. Based on the game state and the rules and preferences, does the mule shout at the finch?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-125",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dove unites with the mouse. The dove does not disarm the songbird. And the rules of the game are as follows. Rule1: If the mermaid does not invest in the company whose owner is the monkey, then the monkey swims inside the pool located besides the house of the fish. Rule2: If something does not unite with the mouse and additionally not disarm the songbird, then it manages to persuade the badger. Rule3: If you are positive that one of the animals does not unite with the snake, you can be certain that it will not swim in the pool next to the house of the fish. Rule4: The mermaid does not invest in the company whose owner is the monkey whenever at least one animal manages to persuade the badger. Rule1 is preferred over Rule3. Based on the game state and the rules and preferences, does the monkey swim in the pool next to the house of the fish?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-141",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The starling builds a power plant near the green fields of the goat. And the rules of the game are as follows. Rule1: The swan does not manage to convince the seahorse, in the case where the bear tears down the castle that belongs to the swan. Rule2: If at least one animal manages to convince the seahorse, then the german shepherd destroys the wall constructed by the dachshund. Rule3: If at least one animal builds a power plant near the green fields of the goat, then the bulldog acquires a photo of the dolphin. Rule4: If there is evidence that one animal, no matter which one, acquires a photo of the dolphin, then the swan manages to persuade the seahorse undoubtedly. Rule1 is preferred over Rule4. Based on the game state and the rules and preferences, does the german shepherd destroy the wall constructed by the dachshund?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth3-143",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The pigeon refuses to help the chinchilla. The pigeon stops the victory of the akita. And the rules of the game are as follows. Rule1: If at least one animal calls the mule, then the reindeer suspects the truthfulness of the dachshund. Rule2: Are you certain that one of the animals does not stop the victory of the akita but it does refuse to help the chinchilla? Then you can also be certain that this animal calls the mule. Rule3: The dachshund unquestionably neglects the mouse, in the case where the reindeer suspects the truthfulness of the dachshund. Based on the game state and the rules and preferences, does the dachshund neglect the mouse?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The elk calls the chihuahua. And the rules of the game are as follows. Rule1: If something brings an oil tank for the bison, then it does not borrow one of the weapons of the owl. Rule2: This is a basic rule: if the elk calls the chihuahua, then the conclusion that \"the chihuahua borrows a weapon from the owl\" follows immediately and effectively. Rule3: If at least one animal borrows one of the weapons of the owl, then the duck shouts at the leopard. Rule1 is preferred over Rule2. Based on the game state and the rules and preferences, does the duck shout at the leopard?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The badger falls on a square of the owl. The llama shouts at the owl. The owl reduced her work hours recently. And the rules of the game are as follows. Rule1: The mouse does not call the bison whenever at least one animal pays some $$$ to the songbird. Rule2: Here is an important piece of information about the owl: if it works fewer hours than before then it builds a power plant near the green fields of the mouse for sure. Rule3: One of the rules of the game is that if the owl builds a power plant near the green fields of the mouse, then the mouse will, without hesitation, call the bison. Rule1 is preferred over Rule3. Based on the game state and the rules and preferences, does the mouse call the bison?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The seal got a well-paid job. The seal has 11 friends, and has a football with a radius of 24 inches. The seal has some arugula. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, neglects the dinosaur, then the monkey is not going to surrender to the snake. Rule2: The seal will neglect the dinosaur if it (the seal) has fewer than eight friends. Rule3: Regarding the seal, if it has a football that fits in a 50.6 x 58.2 x 54.1 inches box, then we can conclude that it neglects the dinosaur. Based on the game state and the rules and preferences, does the monkey surrender to the snake?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mule has 17 friends. The mule has a violin. The seal borrows one of the weapons of the vampire. And the rules of the game are as follows. Rule1: If the mule has more than eight friends, then the mule leaves the houses that are occupied by the akita. Rule2: Here is an important piece of information about the mule: if it has a leafy green vegetable then it leaves the houses that are occupied by the akita for sure. Rule3: This is a basic rule: if the mule does not leave the houses that are occupied by the akita, then the conclusion that the akita surrenders to the walrus follows immediately and effectively. Based on the game state and the rules and preferences, does the akita surrender to the walrus?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-22",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The chinchilla manages to convince the dinosaur. The pelikan does not call the coyote. And the rules of the game are as follows. Rule1: From observing that an animal does not call the coyote, one can conclude the following: that animal will not neglect the mule. Rule2: If there is evidence that one animal, no matter which one, manages to persuade the dinosaur, then the pelikan takes over the emperor of the goat undoubtedly. Rule3: If something takes over the emperor of the goat, then it does not shout at the finch. Rule4: If something does not neglect the mule but takes over the emperor of the dragonfly, then it shouts at the finch. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the pelikan shout at the finch?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-32",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mannikin has 5 friends that are loyal and 5 friends that are not. The mannikin does not want to see the ant. And the rules of the game are as follows. Rule1: If the mannikin has more than nine friends, then the mannikin suspects the truthfulness of the duck. Rule2: Are you certain that one of the animals tears down the castle of the basenji but does not want to see the ant? Then you can also be certain that the same animal is not going to suspect the truthfulness of the duck. Rule3: If something does not suspect the truthfulness of the duck, then it builds a power plant near the green fields of the gorilla. Rule1 is preferred over Rule2. Based on the game state and the rules and preferences, does the mannikin build a power plant near the green fields of the gorilla?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-36",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beaver brings an oil tank for the goat. The beaver has a football with a radius of 19 inches. And the rules of the game are as follows. Rule1: The beaver will not capture the king (i.e. the most important piece) of the dalmatian if it (the beaver) has a football that fits in a 42.8 x 39.3 x 40.4 inches box. Rule2: If you are positive that you saw one of the animals brings an oil tank for the goat, you can be certain that it will also capture the king of the dalmatian. Rule3: If something wants to see the goose, then it does not unite with the snake. Rule4: If the beaver does not capture the king (i.e. the most important piece) of the dalmatian, then the dalmatian unites with the snake. Rule1 is preferred over Rule2. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the dalmatian unite with the snake?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-39",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dove borrows one of the weapons of the ant. The dove shouts at the beetle. And the rules of the game are as follows. Rule1: If you see that something shouts at the beetle and borrows one of the weapons of the ant, what can you certainly conclude? You can conclude that it also invests in the company owned by the flamingo. Rule2: If you are positive that you saw one of the animals invests in the company owned by the flamingo, you can be certain that it will also call the vampire. Based on the game state and the rules and preferences, does the dove call the vampire?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-43",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The chinchilla is a web developer. The reindeer has 91 dollars. The starling has 97 dollars. And the rules of the game are as follows. Rule1: For the gadwall, if you have two pieces of evidence 1) the starling tears down the castle of the gadwall and 2) the chinchilla unites with the gadwall, then you can add \"gadwall will never smile at the basenji\" to your conclusions. Rule2: If the starling has more money than the reindeer, then the starling tears down the castle of the gadwall. Rule3: Here is an important piece of information about the chinchilla: if it works in computer science and engineering then it unites with the gadwall for sure. Based on the game state and the rules and preferences, does the gadwall smile at the basenji?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-47",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The chinchilla calls the otter. The german shepherd invests in the company whose owner is the rhino. And the rules of the game are as follows. Rule1: If you are positive that one of the animals does not hug the zebra, you can be certain that it will borrow one of the weapons of the liger without a doubt. Rule2: The rhino does not hug the zebra, in the case where the german shepherd invests in the company whose owner is the rhino. Rule3: The rhino hugs the zebra whenever at least one animal calls the otter. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the rhino borrow one of the weapons of the liger?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-64",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The gadwall takes over the emperor of the dolphin. And the rules of the game are as follows. Rule1: If at least one animal takes over the emperor of the dolphin, then the lizard captures the king of the ant. Rule2: If the basenji does not tear down the castle that belongs to the lizard, then the lizard does not capture the king (i.e. the most important piece) of the ant. Rule3: This is a basic rule: if the flamingo refuses to help the ant, then the conclusion that \"the ant suspects the truthfulness of the fish\" follows immediately and effectively. Rule4: One of the rules of the game is that if the lizard captures the king (i.e. the most important piece) of the ant, then the ant will never suspect the truthfulness of the fish. Rule2 is preferred over Rule1. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the ant suspect the truthfulness of the fish?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-72",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The swan has a 15 x 13 inches notebook, and is watching a movie from 2020. And the rules of the game are as follows. Rule1: If the swan has a notebook that fits in a 19.4 x 15.9 inches box, then the swan calls the starling. Rule2: If the swan is watching a movie that was released before Shaquille O'Neal retired, then the swan calls the starling. Rule3: If something does not tear down the castle that belongs to the ostrich, then it does not disarm the ant. Rule4: If at least one animal calls the starling, then the gadwall disarms the ant. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the gadwall disarm the ant?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-74",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison has 12 friends. The dinosaur does not refuse to help the bison. And the rules of the game are as follows. Rule1: There exists an animal which unites with the mule? Then, the bulldog definitely does not fall on a square of the mermaid. Rule2: If the bison does not destroy the wall constructed by the bulldog, then the bulldog falls on a square that belongs to the mermaid. Rule3: Regarding the bison, if it has more than six friends, then we can conclude that it destroys the wall constructed by the bulldog. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the bulldog fall on a square of the mermaid?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-78",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The camel has a piano. The camel is watching a movie from 1990. And the rules of the game are as follows. Rule1: The camel will negotiate a deal with the shark if it (the camel) has something to drink. Rule2: Here is an important piece of information about the camel: if it is watching a movie that was released after the Internet was invented then it negotiates a deal with the shark for sure. Rule3: The living creature that negotiates a deal with the shark will also borrow a weapon from the crab, without a doubt. Based on the game state and the rules and preferences, does the camel borrow one of the weapons of the crab?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "HighConflict-depth2-81",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The snake borrows one of the weapons of the vampire. The vampire has 11 friends. The crab does not manage to convince the vampire. And the rules of the game are as follows. Rule1: If the vampire has more than seven friends, then the vampire wants to see the swan. Rule2: The dolphin surrenders to the starling whenever at least one animal wants to see the swan. Rule3: If the woodpecker neglects the dolphin, then the dolphin is not going to surrender to the starling. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the dolphin surrender to the starling?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch is named Cinnamon, and is currently in Berlin. The starling is named Max. And the rules of the game are as follows. Rule1: The finch will leave the houses that are occupied by the basenji if it (the finch) is in Germany at the moment. Rule2: Regarding the finch, if it has a name whose first letter is the same as the first letter of the starling's name, then we can conclude that it does not leave the houses occupied by the basenji. Rule3: The finch will not leave the houses occupied by the basenji if it (the finch) created a time machine. Rule2 is preferred over Rule1. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the finch leave the houses occupied by the basenji?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The shark tears down the castle that belongs to the ostrich. And the rules of the game are as follows. Rule1: The living creature that tears down the castle that belongs to the ostrich will also take over the emperor of the camel, without a doubt. Rule2: There exists an animal which swims inside the pool located besides the house of the gadwall? Then, the shark definitely does not take over the emperor of the camel. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the shark take over the emperor of the camel?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-3",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The vampire has a football with a radius of 23 inches, and was born 4 years ago. The vampire does not neglect the liger. And the rules of the game are as follows. Rule1: The vampire will not trade one of the pieces in its possession with the llama if it (the vampire) is less than 21 and a half months old. Rule2: Be careful when something destroys the wall built by the bison but does not neglect the liger because in this case it will, surely, trade one of its pieces with the llama (this may or may not be problematic). Rule3: Regarding the vampire, if it has a football that fits in a 50.1 x 49.6 x 53.2 inches box, then we can conclude that it does not trade one of the pieces in its possession with the llama. Rule2 is preferred over Rule1. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the vampire trade one of its pieces with the llama?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-5",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The husky has a blade. The husky published a high-quality paper. And the rules of the game are as follows. Rule1: If the husky has a high-quality paper, then the husky does not stop the victory of the monkey. Rule2: The husky will stop the victory of the monkey if it (the husky) works in agriculture. Rule3: The husky will not stop the victory of the monkey if it (the husky) has something to sit on. Rule2 is preferred over Rule1. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the husky stop the victory of the monkey?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-6",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The songbird has a couch, and has eight friends. The songbird has a knife. And the rules of the game are as follows. Rule1: Here is an important piece of information about the songbird: if it has fewer than four friends then it takes over the emperor of the gorilla for sure. Rule2: Regarding the songbird, if it has a sharp object, then we can conclude that it does not take over the emperor of the gorilla. Rule3: The songbird will take over the emperor of the gorilla if it (the songbird) has something to sit on. Rule1 is preferred over Rule2. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the songbird take over the emperor of the gorilla?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-7",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The fish has a couch, and will turn 22 months old in a few minutes. The fish is watching a movie from 1796. And the rules of the game are as follows. Rule1: The fish will not pay some $$$ to the coyote if it (the fish) is less than 19 weeks old. Rule2: Here is an important piece of information about the fish: if it is watching a movie that was released before the French revolution began then it pays some $$$ to the coyote for sure. Rule3: If the fish has something to sit on, then the fish does not pay money to the coyote. Rule4: If the fish owns a luxury aircraft, then the fish pays some $$$ to the coyote. Rule2 is preferred over Rule1. Rule2 is preferred over Rule3. Rule4 is preferred over Rule1. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the fish pay money to the coyote?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita does not reveal a secret to the dachshund. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the akita does not reveal something that is supposed to be a secret to the dachshund, then the dachshund will, without hesitation, enjoy the companionship of the gorilla. Rule2: Here is an important piece of information about the dachshund: if it has a notebook that fits in a 12.3 x 20.3 inches box then it does not enjoy the company of the gorilla for sure. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the dachshund enjoy the company of the gorilla?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-9",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mannikin dances with the wolf. The mannikin has 17 friends. And the rules of the game are as follows. Rule1: The mannikin will not acquire a photo of the ostrich if it (the mannikin) has more than seven friends. Rule2: Be careful when something dances with the wolf and also falls on a square that belongs to the peafowl because in this case it will surely acquire a photo of the ostrich (this may or may not be problematic). Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the mannikin acquire a photograph of the ostrich?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The seal has a football with a radius of 24 inches. The liger does not build a power plant near the green fields of the seal. And the rules of the game are as follows. Rule1: If the liger does not build a power plant close to the green fields of the seal and the seahorse does not swim in the pool next to the house of the seal, then the seal will never fall on a square that belongs to the flamingo. Rule2: The seal will fall on a square that belongs to the flamingo if it (the seal) has a football that fits in a 50.8 x 52.6 x 50.3 inches box. Rule1 is preferred over Rule2. Based on the game state and the rules and preferences, does the seal fall on a square of the flamingo?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-11",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The swan enjoys the company of the beetle but does not shout at the dalmatian. The swan has a football with a radius of 30 inches. And the rules of the game are as follows. Rule1: If something does not shout at the dalmatian but enjoys the companionship of the beetle, then it will not manage to convince the butterfly. Based on the game state and the rules and preferences, does the swan manage to convince the butterfly?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The chinchilla is named Pablo. The seal is named Charlie. The chinchilla does not capture the king of the fangtooth. And the rules of the game are as follows. Rule1: The living creature that does not capture the king (i.e. the most important piece) of the fangtooth will manage to persuade the cougar with no doubts. Rule2: If the chinchilla has a name whose first letter is the same as the first letter of the seal's name, then the chinchilla does not manage to convince the cougar. Rule3: The chinchilla will not manage to convince the cougar if it (the chinchilla) has something to sit on. Rule2 is preferred over Rule1. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the chinchilla manage to convince the cougar?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bear has a 18 x 20 inches notebook. The bear is a farm worker. And the rules of the game are as follows. Rule1: Regarding the bear, if it works in healthcare, then we can conclude that it does not reveal a secret to the stork. Rule2: Here is an important piece of information about the bear: if it has a notebook that fits in a 23.6 x 19.5 inches box then it does not reveal a secret to the stork for sure. Rule3: The bear will reveal a secret to the stork if it (the bear) is less than three and a half years old. Rule3 is preferred over Rule1. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the bear reveal a secret to the stork?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-15",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The shark has a 17 x 19 inches notebook, has a card that is red in color, and is a grain elevator operator. And the rules of the game are as follows. Rule1: The shark will not call the chinchilla if it (the shark) works in agriculture. Based on the game state and the rules and preferences, does the shark call the chinchilla?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-16",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The songbird does not leave the houses occupied by the owl. And the rules of the game are as follows. Rule1: This is a basic rule: if the songbird does not leave the houses that are occupied by the owl, then the conclusion that the owl captures the king of the swallow follows immediately and effectively. Rule2: If the owl works in healthcare, then the owl does not capture the king of the swallow. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the owl capture the king of the swallow?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth1-17",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beetle reduced her work hours recently. The camel refuses to help the beetle. The mannikin shouts at the beetle. And the rules of the game are as follows. Rule1: For the beetle, if you have two pieces of evidence 1) the camel refuses to help the beetle and 2) the mannikin shouts at the beetle, then you can add \"beetle will never want to see the gorilla\" to your conclusions. Based on the game state and the rules and preferences, does the beetle want to see the gorilla?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bear surrenders to the reindeer. The german shepherd hugs the gorilla. The songbird does not suspect the truthfulness of the peafowl. And the rules of the game are as follows. Rule1: From observing that an animal does not suspect the truthfulness of the peafowl, one can conclude the following: that animal will not want to see the crab. Rule2: There exists an animal which hugs the gorilla? Then the songbird definitely falls on a square of the zebra. Rule3: There exists an animal which surrenders to the reindeer? Then the rhino definitely manages to convince the shark. Rule4: Be careful when something falls on a square of the zebra but does not want to see the crab because in this case it will, surely, surrender to the goat (this may or may not be problematic). Based on the game state and the rules and preferences, does the songbird surrender to the goat?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crow destroys the wall constructed by the german shepherd. The crow trades one of its pieces with the duck but does not enjoy the company of the poodle. And the rules of the game are as follows. Rule1: This is a basic rule: if the chihuahua pays some $$$ to the mermaid, then the conclusion that \"the mermaid unites with the husky\" follows immediately and effectively. Rule2: Be careful when something trades one of the pieces in its possession with the duck but does not enjoy the company of the poodle because in this case it will, surely, not bring an oil tank for the mermaid (this may or may not be problematic). Rule3: The mermaid will not unite with the husky, in the case where the crow does not bring an oil tank for the mermaid. Rule1 is preferred over Rule3. Based on the game state and the rules and preferences, does the mermaid unite with the husky?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The monkey is watching a movie from 2018. The seal does not fall on a square of the monkey. The snake does not refuse to help the monkey. And the rules of the game are as follows. Rule1: Here is an important piece of information about the monkey: if it is watching a movie that was released before Obama's presidency started then it trades one of the pieces in its possession with the beetle for sure. Rule2: If at least one animal tears down the castle that belongs to the bison, then the monkey does not capture the king of the elk. Rule3: From observing that one animal trades one of its pieces with the beetle, one can conclude that it also captures the king (i.e. the most important piece) of the elk, undoubtedly. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the monkey capture the king of the elk?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The swallow does not refuse to help the starling. The worm does not surrender to the starling. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the starling tears down the castle that belongs to the badger, then the badger will never swim in the pool next to the house of the monkey. Rule2: In order to conclude that the starling tears down the castle that belongs to the badger, two pieces of evidence are required: firstly the worm does not surrender to the starling and secondly the swallow does not refuse to help the starling. Based on the game state and the rules and preferences, does the badger swim in the pool next to the house of the monkey?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-5",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The german shepherd disarms the beaver. The leopard destroys the wall constructed by the woodpecker. And the rules of the game are as follows. Rule1: If the fish does not tear down the castle of the reindeer and the butterfly does not refuse to help the reindeer, then the reindeer falls on a square of the shark. Rule2: If at least one animal manages to persuade the woodpecker, then the fish does not tear down the castle that belongs to the reindeer. Rule3: If at least one animal disarms the beaver, then the butterfly does not refuse to help the reindeer. Based on the game state and the rules and preferences, does the reindeer fall on a square of the shark?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-7",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The walrus does not fall on a square of the flamingo. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the walrus does not fall on a square of the flamingo, then the flamingo will never invest in the company whose owner is the basenji. Rule2: If the flamingo does not invest in the company owned by the basenji, then the basenji does not leave the houses occupied by the beaver. Based on the game state and the rules and preferences, does the basenji leave the houses occupied by the beaver?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The basenji captures the king of the bear. The bear borrows one of the weapons of the fangtooth. The mermaid hugs the bear. The otter trades one of its pieces with the bee. And the rules of the game are as follows. Rule1: There exists an animal which trades one of the pieces in its possession with the bee? Then the gorilla definitely shouts at the elk. Rule2: If something borrows a weapon from the fangtooth and acquires a photograph of the woodpecker, then it will not borrow a weapon from the gorilla. Rule3: If the bear borrows a weapon from the gorilla, then the gorilla pays some $$$ to the butterfly. Rule4: If the basenji builds a power plant close to the green fields of the bear and the mermaid hugs the bear, then the bear borrows one of the weapons of the gorilla. Rule4 is preferred over Rule2. Based on the game state and the rules and preferences, does the gorilla pay money to the butterfly?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-9",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The pelikan borrows one of the weapons of the shark. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, borrows a weapon from the shark, then the monkey dances with the dragonfly undoubtedly. Rule2: One of the rules of the game is that if the reindeer hugs the akita, then the akita will never unite with the llama. Rule3: If at least one animal dances with the dragonfly, then the akita unites with the llama. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the akita unite with the llama?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-11",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mule negotiates a deal with the wolf. The seahorse wants to see the snake. The frog does not hide the cards that she has from the seahorse. The swan does not shout at the seahorse. And the rules of the game are as follows. Rule1: For the seahorse, if you have two pieces of evidence 1) that the swan does not shout at the seahorse and 2) that the frog does not hide her cards from the seahorse, then you can add seahorse falls on a square of the bee to your conclusions. Rule2: If the dinosaur swears to the crab, then the crab leaves the houses occupied by the bear. Rule3: The dinosaur swears to the crab whenever at least one animal acquires a photograph of the wolf. Based on the game state and the rules and preferences, does the crab leave the houses occupied by the bear?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bee does not neglect the seahorse, and does not want to see the fish. And the rules of the game are as follows. Rule1: If something acquires a photograph of the walrus, then it does not manage to persuade the akita. Rule2: Are you certain that one of the animals is not going to want to see the fish and also does not neglect the seahorse? Then you can also be certain that the same animal acquires a photo of the walrus. Based on the game state and the rules and preferences, does the bee manage to convince the akita?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The zebra builds a power plant near the green fields of the mouse, captures the king of the badger, and disarms the badger. And the rules of the game are as follows. Rule1: From observing that one animal shouts at the badger, one can conclude that it also calls the duck, undoubtedly. Rule2: If something calls the duck, then it neglects the lizard, too. Based on the game state and the rules and preferences, does the zebra neglect the lizard?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-15",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita trades one of its pieces with the bulldog. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, trades one of the pieces in its possession with the seahorse, then the vampire captures the king (i.e. the most important piece) of the flamingo undoubtedly. Rule2: If there is evidence that one animal, no matter which one, trades one of its pieces with the bulldog, then the dolphin trades one of its pieces with the seahorse undoubtedly. Based on the game state and the rules and preferences, does the vampire capture the king of the flamingo?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-16",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The shark hugs the reindeer. The seahorse does not reveal a secret to the reindeer. And the rules of the game are as follows. Rule1: For the reindeer, if you have two pieces of evidence 1) the seahorse does not reveal something that is supposed to be a secret to the reindeer and 2) the shark hugs the reindeer, then you can add \"reindeer leaves the houses that are occupied by the fish\" to your conclusions. Rule2: If something leaves the houses occupied by the fish, then it does not tear down the castle that belongs to the dalmatian. Based on the game state and the rules and preferences, does the reindeer tear down the castle that belongs to the dalmatian?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-17",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The goose shouts at the gadwall. The badger does not leave the houses occupied by the akita. The mermaid does not swim in the pool next to the house of the akita. And the rules of the game are as follows. Rule1: The living creature that suspects the truthfulness of the seal will also bring an oil tank for the shark, without a doubt. Rule2: There exists an animal which brings an oil tank for the gadwall? Then the akita definitely suspects the truthfulness of the seal. Based on the game state and the rules and preferences, does the akita bring an oil tank for the shark?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeLight-depth2-19",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The rhino does not surrender to the pigeon. The stork does not tear down the castle that belongs to the worm. And the rules of the game are as follows. Rule1: The rhino unites with the akita whenever at least one animal captures the king (i.e. the most important piece) of the bulldog. Rule2: From observing that an animal does not surrender to the pigeon, one can conclude that it tears down the castle of the beetle. Rule3: If something tears down the castle of the beetle, then it does not unite with the akita. Rule4: The living creature that does not tear down the castle of the worm will capture the king (i.e. the most important piece) of the bulldog with no doubts. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the rhino unite with the akita?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-50",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The pigeon has a card that is black in color, and is currently in Ottawa. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, takes over the emperor of the elk, then the cobra stops the victory of the wolf undoubtedly. Rule2: One of the rules of the game is that if the seahorse leaves the houses occupied by the badger, then the badger will never manage to convince the husky. Rule3: The badger manages to persuade the husky whenever at least one animal stops the victory of the wolf. Rule4: The pigeon will take over the emperor of the elk if it (the pigeon) is in Canada at the moment. Rule5: If the pigeon has a card whose color starts with the letter \"l\", then the pigeon takes over the emperor of the elk. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the badger manage to convince the husky?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-61",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The camel swims in the pool next to the house of the bison. And the rules of the game are as follows. Rule1: If something swims inside the pool located besides the house of the bison, then it does not take over the emperor of the goose. Rule2: This is a basic rule: if the dragon does not dance with the goose, then the conclusion that the goose negotiates a deal with the ostrich follows immediately and effectively. Rule3: If you are positive that you saw one of the animals dances with the german shepherd, you can be certain that it will not negotiate a deal with the ostrich. Rule4: If the camel does not take over the emperor of the goose, then the goose dances with the german shepherd. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the goose negotiate a deal with the ostrich?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-81",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The goat leaves the houses occupied by the pelikan. And the rules of the game are as follows. Rule1: If the pelikan does not tear down the castle of the mermaid, then the mermaid shouts at the elk. Rule2: The living creature that enjoys the company of the gadwall will also surrender to the bee, without a doubt. Rule3: If something shouts at the elk, then it does not surrender to the bee. Rule4: The pelikan does not tear down the castle of the mermaid, in the case where the goat leaves the houses that are occupied by the pelikan. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the mermaid surrender to the bee?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-107",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The camel assassinated the mayor. And the rules of the game are as follows. Rule1: The ant unquestionably brings an oil tank for the snake, in the case where the camel does not dance with the ant. Rule2: Regarding the camel, if it killed the mayor, then we can conclude that it does not dance with the ant. Rule3: If there is evidence that one animal, no matter which one, brings an oil tank for the snake, then the chinchilla is not going to suspect the truthfulness of the elk. Rule4: If the beetle invests in the company owned by the chinchilla, then the chinchilla suspects the truthfulness of the elk. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the chinchilla suspect the truthfulness of the elk?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-137",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dachshund is watching a movie from 2023, and is a farm worker. And the rules of the game are as follows. Rule1: This is a basic rule: if the walrus neglects the camel, then the conclusion that \"the camel manages to convince the coyote\" follows immediately and effectively. Rule2: The dachshund will want to see the dove if it (the dachshund) works in agriculture. Rule3: If at least one animal negotiates a deal with the seahorse, then the camel does not manage to convince the coyote. Rule4: If there is evidence that one animal, no matter which one, wants to see the dove, then the owl negotiates a deal with the seahorse undoubtedly. Rule1 is preferred over Rule3. Based on the game state and the rules and preferences, does the camel manage to convince the coyote?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-230",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crow is currently in Argentina. And the rules of the game are as follows. Rule1: From observing that one animal manages to convince the beaver, one can conclude that it also borrows a weapon from the chihuahua, undoubtedly. Rule2: If the crow brings an oil tank for the seahorse, then the seahorse manages to convince the beaver. Rule3: If the zebra brings an oil tank for the seahorse, then the seahorse is not going to borrow a weapon from the chihuahua. Rule4: If the crow is in South America at the moment, then the crow brings an oil tank for the seahorse. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the seahorse borrow one of the weapons of the chihuahua?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-233",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The frog hides the cards that she has from the bee. And the rules of the game are as follows. Rule1: The living creature that dances with the dragon will never swear to the vampire. Rule2: If at least one animal hides the cards that she has from the bee, then the lizard dances with the dragon. Rule3: The vampire will not swim in the pool next to the house of the mannikin, in the case where the lizard does not swear to the vampire. Rule4: There exists an animal which surrenders to the dragon? Then the lizard definitely swears to the vampire. Rule5: If the goat leaves the houses that are occupied by the vampire, then the vampire swims inside the pool located besides the house of the mannikin. Rule4 is preferred over Rule1. Rule5 is preferred over Rule3. Based on the game state and the rules and preferences, does the vampire swim in the pool next to the house of the mannikin?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-243",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The camel reveals a secret to the mannikin. And the rules of the game are as follows. Rule1: The living creature that does not refuse to help the shark will surrender to the dragonfly with no doubts. Rule2: If the camel reveals something that is supposed to be a secret to the mannikin, then the mannikin is not going to refuse to help the shark. Rule3: The stork unquestionably hides her cards from the seal, in the case where the gorilla does not fall on a square of the stork. Rule4: The stork does not hide the cards that she has from the seal whenever at least one animal surrenders to the dragonfly. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the stork hide the cards that she has from the seal?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-283",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The leopard manages to convince the lizard. And the rules of the game are as follows. Rule1: The living creature that does not want to see the duck will reveal a secret to the snake with no doubts. Rule2: If the bear manages to persuade the leopard, then the leopard stops the victory of the mule. Rule3: The living creature that manages to persuade the lizard will never want to see the duck. Rule4: From observing that an animal reveals a secret to the beetle, one can conclude the following: that animal does not reveal something that is supposed to be a secret to the snake. Rule5: The living creature that reveals something that is supposed to be a secret to the snake will never stop the victory of the mule. Rule2 is preferred over Rule5. Rule4 is preferred over Rule1. Based on the game state and the rules and preferences, does the leopard stop the victory of the mule?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-297",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crab surrenders to the lizard. The pelikan destroys the wall constructed by the lizard. And the rules of the game are as follows. Rule1: If at least one animal hides her cards from the seal, then the stork hugs the walrus. Rule2: There exists an animal which reveals a secret to the lizard? Then the walrus definitely destroys the wall constructed by the finch. Rule3: One of the rules of the game is that if the stork hugs the walrus, then the walrus will never destroy the wall constructed by the finch. Rule4: For the lizard, if you have two pieces of evidence 1) the pelikan destroys the wall constructed by the lizard and 2) the crab surrenders to the lizard, then you can add \"lizard hides the cards that she has from the seal\" to your conclusions. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the walrus destroy the wall constructed by the finch?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-422",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The basenji has a cell phone. The dove swears to the basenji. And the rules of the game are as follows. Rule1: If something does not call the worm, then it leaves the houses occupied by the otter. Rule2: If the camel suspects the truthfulness of the basenji, then the basenji is not going to acquire a photograph of the fish. Rule3: The basenji does not call the worm, in the case where the dove swears to the basenji. Rule4: If something leaves the houses that are occupied by the otter, then it acquires a photograph of the fish, too. Rule2 is preferred over Rule4. Based on the game state and the rules and preferences, does the basenji acquire a photograph of the fish?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-451",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mannikin has some arugula. And the rules of the game are as follows. Rule1: The mannikin will refuse to help the basenji if it (the mannikin) has a leafy green vegetable. Rule2: The dove does not trade one of its pieces with the dinosaur whenever at least one animal negotiates a deal with the bee. Rule3: This is a basic rule: if the frog brings an oil tank for the dove, then the conclusion that \"the dove trades one of its pieces with the dinosaur\" follows immediately and effectively. Rule4: If there is evidence that one animal, no matter which one, refuses to help the basenji, then the flamingo negotiates a deal with the bee undoubtedly. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the dove trade one of its pieces with the dinosaur?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-452",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison negotiates a deal with the pigeon. The pigeon has a card that is red in color. And the rules of the game are as follows. Rule1: If the pigeon has a card whose color appears in the flag of Belgium, then the pigeon hugs the owl. Rule2: The fangtooth trades one of the pieces in its possession with the walrus whenever at least one animal hugs the owl. Rule3: One of the rules of the game is that if the basenji unites with the dugong, then the dugong will never smile at the peafowl. Rule4: The dugong smiles at the peafowl whenever at least one animal trades one of its pieces with the walrus. Rule5: If the bison negotiates a deal with the pigeon, then the pigeon is not going to hug the owl. Rule1 is preferred over Rule5. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the dugong smile at the peafowl?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-545",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The swallow has a card that is orange in color, and has a flute. And the rules of the game are as follows. Rule1: The living creature that does not want to see the dugong will build a power plant close to the green fields of the cobra with no doubts. Rule2: The living creature that builds a power plant close to the green fields of the cobra will never disarm the finch. Rule3: If at least one animal builds a power plant close to the green fields of the zebra, then the swallow disarms the finch. Rule4: If the swallow has something to carry apples and oranges, then the swallow does not want to see the dugong. Rule5: The swallow will not want to see the dugong if it (the swallow) has a card whose color is one of the rainbow colors. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the swallow disarm the finch?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth3-554",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mule creates one castle for the dragon. The mule enjoys the company of the bulldog. And the rules of the game are as follows. Rule1: If you are positive that you saw one of the animals falls on a square that belongs to the monkey, you can be certain that it will also unite with the shark. Rule2: If the mule unites with the shark, then the shark smiles at the starling. Rule3: The living creature that does not swear to the husky will never smile at the starling. Rule4: The living creature that creates a castle for the dragon will also fall on a square that belongs to the monkey, without a doubt. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the shark smile at the starling?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-11",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crab does not capture the king of the goose. And the rules of the game are as follows. Rule1: From observing that an animal does not capture the king of the goose, one can conclude that it suspects the truthfulness of the dalmatian. Rule2: The swan does not manage to convince the butterfly whenever at least one animal suspects the truthfulness of the dalmatian. Rule3: One of the rules of the game is that if the monkey tears down the castle that belongs to the swan, then the swan will, without hesitation, manage to persuade the butterfly. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the swan manage to convince the butterfly?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The peafowl is currently in Milan, and reduced her work hours recently. And the rules of the game are as follows. Rule1: If the peafowl is in Italy at the moment, then the peafowl does not stop the victory of the butterfly. Rule2: If the peafowl works more hours than before, then the peafowl does not stop the victory of the butterfly. Rule3: The peafowl does not capture the king (i.e. the most important piece) of the poodle, in the case where the cougar smiles at the peafowl. Rule4: The living creature that does not stop the victory of the butterfly will capture the king (i.e. the most important piece) of the poodle with no doubts. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the peafowl capture the king of the poodle?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-25",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The liger wants to see the seal. The ostrich captures the king of the beaver. And the rules of the game are as follows. Rule1: The seal will call the starling if it (the seal) has fewer than ten friends. Rule2: One of the rules of the game is that if the woodpecker hugs the starling, then the starling will, without hesitation, create one castle for the goat. Rule3: The seal does not call the starling, in the case where the liger wants to see the seal. Rule4: The starling will not create a castle for the goat, in the case where the seal does not call the starling. Rule5: If at least one animal captures the king of the beaver, then the woodpecker hugs the starling. Rule1 is preferred over Rule3. Rule4 is preferred over Rule2. Based on the game state and the rules and preferences, does the starling create one castle for the goat?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-27",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crow neglects the vampire. The dove calls the vampire. The vampire hugs the frog. And the rules of the game are as follows. Rule1: For the vampire, if you have two pieces of evidence 1) the crow neglects the vampire and 2) the dove calls the vampire, then you can add \"vampire shouts at the cobra\" to your conclusions. Rule2: If at least one animal neglects the llama, then the vampire wants to see the mule. Rule3: If you see that something does not surrender to the dugong but it shouts at the cobra, what can you certainly conclude? You can conclude that it is not going to want to see the mule. Rule4: If you are positive that you saw one of the animals hugs the frog, you can be certain that it will not surrender to the dugong. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the vampire want to see the mule?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-29",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The butterfly got a well-paid job, and is named Lola. The dachshund is named Mojo. The shark has a cell phone. The shark is currently in Lyon. And the rules of the game are as follows. Rule1: The butterfly will dance with the beaver if it (the butterfly) has a name whose first letter is the same as the first letter of the dachshund's name. Rule2: The shark will not neglect the mannikin if it (the shark) is in Africa at the moment. Rule3: If the shark does not neglect the mannikin, then the mannikin does not fall on a square that belongs to the worm. Rule4: The butterfly will dance with the beaver if it (the butterfly) has a high salary. Rule5: Here is an important piece of information about the shark: if it has a device to connect to the internet then it does not neglect the mannikin for sure. Based on the game state and the rules and preferences, does the mannikin fall on a square of the worm?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-35",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The starling has a knapsack, and is currently in Paris. And the rules of the game are as follows. Rule1: There exists an animal which pays money to the mouse? Then the seahorse definitely enjoys the companionship of the owl. Rule2: Regarding the starling, if it is in France at the moment, then we can conclude that it tears down the castle that belongs to the seahorse. Rule3: This is a basic rule: if the starling tears down the castle of the seahorse, then the conclusion that \"the seahorse will not enjoy the companionship of the owl\" follows immediately and effectively. Rule4: The starling will tear down the castle that belongs to the seahorse if it (the starling) has a musical instrument. Rule1 is preferred over Rule3. Based on the game state and the rules and preferences, does the seahorse enjoy the company of the owl?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-39",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dove creates one castle for the songbird. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the pelikan does not enjoy the companionship of the dove, then the dove will never swim inside the pool located besides the house of the goose. Rule2: If something swims in the pool next to the house of the goose, then it does not smile at the mannikin. Rule3: This is a basic rule: if the badger acquires a photo of the dove, then the conclusion that \"the dove smiles at the mannikin\" follows immediately and effectively. Rule4: If you are positive that you saw one of the animals creates a castle for the songbird, you can be certain that it will also swim inside the pool located besides the house of the goose. Rule1 is preferred over Rule4. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the dove smile at the mannikin?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-47",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The elk is currently in Istanbul. The wolf swims in the pool next to the house of the dalmatian. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the wolf swims inside the pool located besides the house of the dalmatian, then the dalmatian will, without hesitation, call the vampire. Rule2: The elk will want to see the monkey if it (the elk) is in Turkey at the moment. Rule3: If the elk wants to see the monkey, then the monkey is not going to enjoy the company of the seahorse. Based on the game state and the rules and preferences, does the monkey enjoy the company of the seahorse?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-48",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The chihuahua has some kale. The chihuahua has some spinach. And the rules of the game are as follows. Rule1: Here is an important piece of information about the chihuahua: if it has a sharp object then it calls the ant for sure. Rule2: From observing that one animal calls the ant, one can conclude that it also disarms the shark, undoubtedly. Rule3: If the chihuahua has a leafy green vegetable, then the chihuahua calls the ant. Rule4: If something shouts at the beetle, then it does not call the ant. Rule5: If you are positive that you saw one of the animals takes over the emperor of the mannikin, you can be certain that it will not disarm the shark. Rule4 is preferred over Rule1. Rule4 is preferred over Rule3. Rule5 is preferred over Rule2. Based on the game state and the rules and preferences, does the chihuahua disarm the shark?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-50",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cobra takes over the emperor of the elk. And the rules of the game are as follows. Rule1: The living creature that takes over the emperor of the elk will also stop the victory of the wolf, without a doubt. Rule2: One of the rules of the game is that if the seahorse leaves the houses that are occupied by the badger, then the badger will never manage to convince the husky. Rule3: If at least one animal stops the victory of the wolf, then the badger manages to persuade the husky. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the badger manage to convince the husky?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-51",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita unites with the stork. The chinchilla stole a bike from the store. The chinchilla trades one of its pieces with the seahorse. The chinchilla does not capture the king of the bulldog. And the rules of the game are as follows. Rule1: From observing that an animal smiles at the beaver, one can conclude the following: that animal does not unite with the chihuahua. Rule2: Are you certain that one of the animals does not capture the king (i.e. the most important piece) of the bulldog but it does trade one of its pieces with the seahorse? Then you can also be certain that this animal neglects the rhino. Rule3: The seal smiles at the beaver whenever at least one animal unites with the stork. Based on the game state and the rules and preferences, does the seal unite with the chihuahua?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-61",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The flamingo is named Charlie. The goose is named Cinnamon. And the rules of the game are as follows. Rule1: From observing that an animal dances with the german shepherd, one can conclude the following: that animal does not negotiate a deal with the ostrich. Rule2: The goose unquestionably negotiates a deal with the ostrich, in the case where the dragon does not dance with the goose. Rule3: Here is an important piece of information about the goose: if it has a name whose first letter is the same as the first letter of the flamingo's name then it dances with the german shepherd for sure. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the goose negotiate a deal with the ostrich?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-63",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The basenji has 2 friends. The basenji has a green tea. The basenji is currently in Nigeria. The german shepherd builds a power plant near the green fields of the crab. And the rules of the game are as follows. Rule1: If at least one animal builds a power plant near the green fields of the crab, then the fish unites with the stork. Rule2: Regarding the basenji, if it has fewer than six friends, then we can conclude that it shouts at the stork. Rule3: If something unites with the stork, then it does not take over the emperor of the bee. Based on the game state and the rules and preferences, does the fish take over the emperor of the bee?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-69",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The basenji is watching a movie from 1986. The basenji was born four years ago. And the rules of the game are as follows. Rule1: If you are positive that you saw one of the animals refuses to help the leopard, you can be certain that it will not negotiate a deal with the pelikan. Rule2: If the basenji is watching a movie that was released after the Internet was invented, then the basenji refuses to help the leopard. Rule3: If something does not unite with the frog, then it negotiates a deal with the pelikan. Rule4: If the basenji is less than 23 months old, then the basenji refuses to help the leopard. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the basenji negotiate a deal with the pelikan?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Binary-depth2-75",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The german shepherd smiles at the dragon. And the rules of the game are as follows. Rule1: If at least one animal smiles at the dragon, then the mermaid reveals a secret to the fish. Rule2: There exists an animal which refuses to help the frog? Then the mermaid definitely captures the king (i.e. the most important piece) of the crow. Rule3: If you are positive that you saw one of the animals reveals a secret to the fish, you can be certain that it will not capture the king (i.e. the most important piece) of the crow. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the mermaid capture the king of the crow?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The butterfly wants to see the frog. The finch has eight friends. The zebra builds a power plant near the green fields of the dragon. And the rules of the game are as follows. Rule1: In order to conclude that the crow does not tear down the castle of the dolphin, two pieces of evidence are required: firstly that the finch will not shout at the crow and secondly the beaver destroys the wall built by the crow. Rule2: The finch will not shout at the crow if it (the finch) has fewer than 12 friends. Rule3: The beaver destroys the wall built by the crow whenever at least one animal wants to see the frog. Based on the game state and the rules and preferences, does the crow tear down the castle that belongs to the dolphin?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The monkey has 69 dollars. The monkey is a software developer. The owl has 51 dollars. The wolf has 11 dollars. And the rules of the game are as follows. Rule1: Regarding the monkey, if it works in computer science and engineering, then we can conclude that it does not manage to convince the flamingo. Rule2: One of the rules of the game is that if the monkey does not disarm the flamingo, then the flamingo will, without hesitation, call the bear. Rule3: If the monkey has more money than the wolf and the owl combined, then the monkey does not manage to persuade the flamingo. Based on the game state and the rules and preferences, does the flamingo call the bear?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bulldog calls the otter. The flamingo has 37 dollars. The ostrich has 51 dollars, and has some romaine lettuce. The ostrich negotiates a deal with the bison. And the rules of the game are as follows. Rule1: If the ostrich has more money than the flamingo, then the ostrich does not shout at the stork. Rule2: There exists an animal which calls the otter? Then the butterfly definitely neglects the ostrich. Rule3: The ostrich does not refuse to help the coyote, in the case where the butterfly neglects the ostrich. Rule4: The ostrich will not shout at the stork if it (the ostrich) has a device to connect to the internet. Rule5: If something negotiates a deal with the bison, then it borrows a weapon from the dove, too. Based on the game state and the rules and preferences, does the ostrich refuse to help the coyote?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-9",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crab is a teacher assistant, and is two years old. And the rules of the game are as follows. Rule1: If the crab destroys the wall constructed by the frog, then the frog enjoys the company of the crow. Rule2: Regarding the crab, if it works in healthcare, then we can conclude that it destroys the wall constructed by the frog. Rule3: If the crab is less than three years old, then the crab destroys the wall constructed by the frog. Based on the game state and the rules and preferences, does the frog enjoy the company of the crow?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The zebra negotiates a deal with the bee. And the rules of the game are as follows. Rule1: From observing that an animal reveals something that is supposed to be a secret to the seahorse, one can conclude the following: that animal does not refuse to help the mouse. Rule2: If there is evidence that one animal, no matter which one, negotiates a deal with the bee, then the dachshund reveals something that is supposed to be a secret to the seahorse undoubtedly. Based on the game state and the rules and preferences, does the dachshund refuse to help the mouse?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The stork does not surrender to the gorilla. The stork does not surrender to the otter. And the rules of the game are as follows. Rule1: If you see that something does not surrender to the otter and also does not surrender to the gorilla, what can you certainly conclude? You can conclude that it also unites with the butterfly. Rule2: If something unites with the butterfly, then it swims in the pool next to the house of the starling, too. Rule3: There exists an animal which swims in the pool next to the house of the wolf? Then, the stork definitely does not swim inside the pool located besides the house of the starling. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the stork swim in the pool next to the house of the starling?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-16",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The ant hugs the dragonfly. The dachshund is named Peddi. The dragonfly has a card that is white in color, and will turn 4 years old in a few minutes. The dragonfly has a cello. The dragonfly is named Pashmak. And the rules of the game are as follows. Rule1: The dragonfly will borrow a weapon from the mannikin if it (the dragonfly) is more than 2 years old. Rule2: The dragonfly will reveal a secret to the peafowl if it (the dragonfly) has a musical instrument. Rule3: Be careful when something borrows a weapon from the mannikin and also reveals a secret to the peafowl because in this case it will surely not destroy the wall built by the dragon (this may or may not be problematic). Based on the game state and the rules and preferences, does the dragonfly destroy the wall constructed by the dragon?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-17",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The otter has a 10 x 18 inches notebook. The otter is 15 months old. The duck does not tear down the castle that belongs to the otter. And the rules of the game are as follows. Rule1: If the otter does not enjoy the companionship of the dugong, then the dugong captures the king (i.e. the most important piece) of the bear. Rule2: Regarding the otter, if it is more than four years old, then we can conclude that it does not want to see the dugong. Rule3: Regarding the otter, if it has a notebook that fits in a 18.1 x 12.8 inches box, then we can conclude that it does not want to see the dugong. Based on the game state and the rules and preferences, does the dugong capture the king of the bear?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-20",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The starling captures the king of the leopard. And the rules of the game are as follows. Rule1: If something does not capture the king (i.e. the most important piece) of the leopard, then it swims in the pool next to the house of the chinchilla. Rule2: If there is evidence that one animal, no matter which one, swims in the pool next to the house of the chinchilla, then the husky wants to see the bee undoubtedly. Based on the game state and the rules and preferences, does the husky want to see the bee?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-21",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bee has a card that is blue in color. The bee is a sales manager. And the rules of the game are as follows. Rule1: There exists an animal which calls the akita? Then the dachshund definitely falls on a square that belongs to the crab. Rule2: The bee will call the akita if it (the bee) has a card whose color is one of the rainbow colors. Rule3: The bee will call the akita if it (the bee) works in agriculture. Based on the game state and the rules and preferences, does the dachshund fall on a square of the crab?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-22",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The owl builds a power plant near the green fields of the monkey. And the rules of the game are as follows. Rule1: The monkey will not create a castle for the pelikan if it (the monkey) is a fan of Chris Ronaldo. Rule2: If the owl builds a power plant near the green fields of the monkey, then the monkey creates a castle for the pelikan. Rule3: The pelikan does not unite with the dalmatian, in the case where the monkey creates a castle for the pelikan. Rule1 is preferred over Rule2. Based on the game state and the rules and preferences, does the pelikan unite with the dalmatian?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-23",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The flamingo neglects the woodpecker. The mule is a grain elevator operator. The woodpecker has a basketball with a diameter of 30 inches. The woodpecker has a card that is violet in color. And the rules of the game are as follows. Rule1: If the mule stops the victory of the bison and the woodpecker hugs the bison, then the bison wants to see the fish. Rule2: One of the rules of the game is that if the flamingo does not neglect the woodpecker, then the woodpecker will, without hesitation, hug the bison. Rule3: If the mule works in agriculture, then the mule stops the victory of the bison. Based on the game state and the rules and preferences, does the bison want to see the fish?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-26",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The ant swims in the pool next to the house of the dalmatian. The badger captures the king of the fish. The worm refuses to help the ant. The ostrich does not refuse to help the ant. And the rules of the game are as follows. Rule1: If something trades one of its pieces with the woodpecker and swims inside the pool located besides the house of the songbird, then it suspects the truthfulness of the butterfly. Rule2: If at least one animal invests in the company whose owner is the fish, then the ant swims inside the pool located besides the house of the songbird. Rule3: If something swims inside the pool located besides the house of the dalmatian, then it trades one of the pieces in its possession with the woodpecker, too. Based on the game state and the rules and preferences, does the ant suspect the truthfulness of the butterfly?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-27",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The llama smiles at the basenji. The monkey reveals a secret to the fish. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, smiles at the basenji, then the swallow is not going to enjoy the companionship of the zebra. Rule2: This is a basic rule: if the monkey reveals a secret to the fish, then the conclusion that \"the fish swims inside the pool located besides the house of the zebra\" follows immediately and effectively. Rule3: If the swallow does not enjoy the company of the zebra however the fish swears to the zebra, then the zebra will not want to see the pigeon. Rule4: The zebra unquestionably wants to see the pigeon, in the case where the fish swims inside the pool located besides the house of the zebra. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the zebra want to see the pigeon?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "Main-depth2-28",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The songbird tears down the castle that belongs to the husky. And the rules of the game are as follows. Rule1: If the llama does not dance with the bison, then the bison does not want to see the seahorse. Rule2: If at least one animal tears down the castle that belongs to the husky, then the llama does not dance with the bison. Based on the game state and the rules and preferences, does the bison want to see the seahorse?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita swears to the flamingo. The bison manages to convince the dolphin. And the rules of the game are as follows. Rule1: The dolphin unquestionably hides the cards that she has from the crow, in the case where the bison manages to persuade the dolphin. Rule2: For the crow, if you have two pieces of evidence 1) the akita destroys the wall constructed by the crow and 2) the dolphin hides the cards that she has from the crow, then you can add \"crow acquires a photo of the poodle\" to your conclusions. Rule3: If you are positive that you saw one of the animals swears to the flamingo, you can be certain that it will also destroy the wall constructed by the crow. Based on the game state and the rules and preferences, does the crow acquire a photograph of the poodle?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The otter assassinated the mayor, and was born three years ago. And the rules of the game are as follows. Rule1: There exists an animal which manages to persuade the finch? Then, the dragonfly definitely does not tear down the castle that belongs to the dachshund. Rule2: The otter will manage to persuade the finch if it (the otter) killed the mayor. Rule3: Here is an important piece of information about the otter: if it is less than sixteen and a half months old then it manages to convince the finch for sure. Based on the game state and the rules and preferences, does the dragonfly tear down the castle that belongs to the dachshund?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-3",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The fish acquires a photograph of the zebra. The mouse is a sales manager. And the rules of the game are as follows. Rule1: Regarding the mouse, if it works in marketing, then we can conclude that it manages to convince the chinchilla. Rule2: If there is evidence that one animal, no matter which one, manages to persuade the chinchilla, then the zebra acquires a photo of the bison undoubtedly. Rule3: This is a basic rule: if the fish acquires a photo of the zebra, then the conclusion that \"the zebra reveals a secret to the dalmatian\" follows immediately and effectively. Rule4: If something shouts at the dugong and reveals something that is supposed to be a secret to the dalmatian, then it will not acquire a photograph of the bison. Rule4 is preferred over Rule2. Based on the game state and the rules and preferences, does the zebra acquire a photograph of the bison?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dragonfly has 62 dollars. The otter brings an oil tank for the pelikan. The stork has 95 dollars. The rhino does not reveal a secret to the pelikan. And the rules of the game are as follows. Rule1: In order to conclude that the pelikan leaves the houses occupied by the snake, two pieces of evidence are required: firstly the otter should bring an oil tank for the pelikan and secondly the rhino should not reveal something that is supposed to be a secret to the pelikan. Rule2: If the stork has more money than the dragonfly, then the stork negotiates a deal with the bulldog. Rule3: The bulldog does not negotiate a deal with the zebra whenever at least one animal leaves the houses occupied by the snake. Based on the game state and the rules and preferences, does the bulldog negotiate a deal with the zebra?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-5",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch has some arugula. And the rules of the game are as follows. Rule1: If at least one animal destroys the wall built by the bee, then the mouse neglects the zebra. Rule2: If the finch has something to sit on, then the finch destroys the wall constructed by the bee. Based on the game state and the rules and preferences, does the mouse neglect the zebra?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-6",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The gadwall calls the finch. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, calls the finch, then the monkey is not going to manage to convince the poodle. Rule2: If something does not manage to convince the poodle, then it smiles at the goose. Based on the game state and the rules and preferences, does the monkey smile at the goose?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-7",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dolphin has a green tea. And the rules of the game are as follows. Rule1: This is a basic rule: if the dolphin does not hide the cards that she has from the bulldog, then the conclusion that the bulldog will not negotiate a deal with the gadwall follows immediately and effectively. Rule2: Regarding the dolphin, if it has something to drink, then we can conclude that it does not hide her cards from the bulldog. Based on the game state and the rules and preferences, does the bulldog negotiate a deal with the gadwall?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The llama is named Lily. The owl has 11 friends. The owl is named Lola. And the rules of the game are as follows. Rule1: If the owl does not call the coyote, then the coyote hugs the lizard. Rule2: Here is an important piece of information about the owl: if it has a name whose first letter is the same as the first letter of the llama's name then it does not pay money to the coyote for sure. Rule3: If the owl has more than 4 friends, then the owl does not pay money to the coyote. Based on the game state and the rules and preferences, does the coyote hug the lizard?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-9",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The worm is watching a movie from 1908, and is currently in Nigeria. And the rules of the game are as follows. Rule1: If the worm is watching a movie that was released after world war 1 started, then the worm wants to see the beaver. Rule2: This is a basic rule: if the worm wants to see the beaver, then the conclusion that \"the beaver takes over the emperor of the leopard\" follows immediately and effectively. Rule3: Regarding the worm, if it is more than 24 months old, then we can conclude that it does not want to see the beaver. Rule4: The worm will want to see the beaver if it (the worm) is in Africa at the moment. Rule3 is preferred over Rule1. Rule3 is preferred over Rule4. Based on the game state and the rules and preferences, does the beaver take over the emperor of the leopard?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bear hides the cards that she has from the goose. And the rules of the game are as follows. Rule1: The owl falls on a square of the shark whenever at least one animal hides her cards from the goose. Rule2: If at least one animal falls on a square that belongs to the shark, then the gorilla does not enjoy the companionship of the rhino. Based on the game state and the rules and preferences, does the gorilla enjoy the company of the rhino?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The husky captures the king of the goat, and is 22 months old. The husky is watching a movie from 2001. And the rules of the game are as follows. Rule1: The husky will stop the victory of the songbird if it (the husky) is watching a movie that was released after Google was founded. Rule2: If the husky is less than 5 and a half months old, then the husky stops the victory of the songbird. Rule3: From observing that an animal captures the king of the goat, one can conclude the following: that animal does not bring an oil tank for the dachshund. Rule4: Be careful when something stops the victory of the songbird but does not bring an oil tank for the dachshund because in this case it will, surely, not pay some $$$ to the dinosaur (this may or may not be problematic). Based on the game state and the rules and preferences, does the husky pay money to the dinosaur?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The seal wants to see the beetle. And the rules of the game are as follows. Rule1: If you are positive that one of the animals does not want to see the beetle, you can be certain that it will capture the king of the gadwall without a doubt. Rule2: From observing that one animal captures the king of the gadwall, one can conclude that it also falls on a square of the dinosaur, undoubtedly. Based on the game state and the rules and preferences, does the seal fall on a square of the dinosaur?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-17",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The fish is a marketing manager. And the rules of the game are as follows. Rule1: If the fish works in marketing, then the fish hides her cards from the basenji. Rule2: The living creature that does not hide her cards from the basenji will surrender to the dolphin with no doubts. Based on the game state and the rules and preferences, does the fish surrender to the dolphin?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-18",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The ostrich is 28 and a half weeks old. And the rules of the game are as follows. Rule1: Here is an important piece of information about the ostrich: if it is less than three and a half years old then it hides the cards that she has from the snake for sure. Rule2: The snake unquestionably hugs the mouse, in the case where the ostrich hides her cards from the snake. Based on the game state and the rules and preferences, does the snake hug the mouse?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "LowConflict-depth2-20",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beaver invests in the company whose owner is the reindeer. The vampire is a grain elevator operator. The beaver does not enjoy the company of the liger. And the rules of the game are as follows. Rule1: In order to conclude that the gorilla builds a power plant near the green fields of the shark, two pieces of evidence are required: firstly the beaver should want to see the gorilla and secondly the vampire should shout at the gorilla. Rule2: Regarding the vampire, if it works in agriculture, then we can conclude that it shouts at the gorilla. Rule3: Are you certain that one of the animals invests in the company owned by the reindeer and also at the same time enjoys the companionship of the liger? Then you can also be certain that the same animal wants to see the gorilla. Based on the game state and the rules and preferences, does the gorilla build a power plant near the green fields of the shark?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-0",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dugong has a basketball with a diameter of 29 inches. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the dugong does not invest in the company whose owner is the woodpecker, then the woodpecker will, without hesitation, swear to the chinchilla. Rule2: There exists an animal which pays money to the dove? Then, the woodpecker definitely does not swear to the chinchilla. Rule3: Regarding the dugong, if it has a basketball that fits in a 33.6 x 31.1 x 33.7 inches box, then we can conclude that it does not invest in the company whose owner is the woodpecker. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the woodpecker swear to the chinchilla?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison hides the cards that she has from the ostrich, and neglects the owl. And the rules of the game are as follows. Rule1: If something neglects the owl and hides her cards from the ostrich, then it reveals a secret to the dove. Rule2: The goat does not leave the houses that are occupied by the husky whenever at least one animal reveals a secret to the dove. Based on the game state and the rules and preferences, does the goat leave the houses occupied by the husky?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dugong struggles to find food. The wolf has eleven friends. And the rules of the game are as follows. Rule1: If the dugong works in education, then the dugong dances with the wolf. Rule2: Be careful when something tears down the castle of the dachshund and also shouts at the beaver because in this case it will surely not pay some $$$ to the seal (this may or may not be problematic). Rule3: If the dugong does not swim in the pool next to the house of the wolf, then the wolf pays money to the seal. Rule4: Here is an important piece of information about the wolf: if it has more than two friends then it shouts at the beaver for sure. Rule5: The dugong will not dance with the wolf if it (the dugong) has difficulty to find food. Rule1 is preferred over Rule5. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the wolf pay money to the seal?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cobra has 72 dollars. The cobra invented a time machine. The rhino has 49 dollars. And the rules of the game are as follows. Rule1: If the cobra has more money than the rhino, then the cobra refuses to help the butterfly. Rule2: Regarding the cobra, if it purchased a time machine, then we can conclude that it refuses to help the butterfly. Rule3: There exists an animal which refuses to help the butterfly? Then, the starling definitely does not capture the king (i.e. the most important piece) of the husky. Based on the game state and the rules and preferences, does the starling capture the king of the husky?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-6",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dragon smiles at the german shepherd. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the dragon smiles at the german shepherd, then the german shepherd will never destroy the wall built by the dolphin. Rule2: If at least one animal wants to see the otter, then the german shepherd does not capture the king of the monkey. Rule3: The living creature that does not destroy the wall constructed by the dolphin will capture the king (i.e. the most important piece) of the monkey with no doubts. Rule4: If there is evidence that one animal, no matter which one, leaves the houses that are occupied by the dragonfly, then the german shepherd destroys the wall constructed by the dolphin undoubtedly. Rule2 is preferred over Rule3. Rule4 is preferred over Rule1. Based on the game state and the rules and preferences, does the german shepherd capture the king of the monkey?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The reindeer destroys the wall constructed by the owl, and falls on a square of the chinchilla. And the rules of the game are as follows. Rule1: If something destroys the wall built by the owl and reveals a secret to the chinchilla, then it wants to see the goose. Rule2: This is a basic rule: if the reindeer wants to see the goose, then the conclusion that \"the goose negotiates a deal with the dinosaur\" follows immediately and effectively. Based on the game state and the rules and preferences, does the goose negotiate a deal with the dinosaur?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The duck refuses to help the snake. The otter does not enjoy the company of the snake. And the rules of the game are as follows. Rule1: For the snake, if you have two pieces of evidence 1) the duck refuses to help the snake and 2) the otter does not enjoy the company of the snake, then you can add snake creates one castle for the mermaid to your conclusions. Rule2: The reindeer does not trade one of its pieces with the akita whenever at least one animal creates one castle for the mermaid. Rule3: From observing that one animal wants to see the vampire, one can conclude that it also trades one of its pieces with the akita, undoubtedly. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the reindeer trade one of its pieces with the akita?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dragonfly has 37 dollars. The fangtooth has 8 dollars. The fish has 64 dollars. The fish neglects the badger. And the rules of the game are as follows. Rule1: Be careful when something negotiates a deal with the zebra and also neglects the badger because in this case it will surely not fall on a square that belongs to the bee (this may or may not be problematic). Rule2: If the fish has more money than the dragonfly and the fangtooth combined, then the fish falls on a square that belongs to the bee. Rule3: If at least one animal falls on a square of the bee, then the songbird disarms the reindeer. Rule4: From observing that an animal wants to see the goat, one can conclude the following: that animal does not disarm the reindeer. Rule1 is preferred over Rule2. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the songbird disarm the reindeer?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The gadwall calls the badger. And the rules of the game are as follows. Rule1: This is a basic rule: if the otter borrows a weapon from the gadwall, then the conclusion that \"the gadwall will not want to see the mermaid\" follows immediately and effectively. Rule2: The living creature that wants to see the mermaid will never invest in the company whose owner is the snake. Rule3: The living creature that calls the badger will also want to see the mermaid, without a doubt. Rule1 is preferred over Rule3. Based on the game state and the rules and preferences, does the gadwall invest in the company whose owner is the snake?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-15",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cougar shouts at the seahorse. The cougar does not manage to convince the wolf. And the rules of the game are as follows. Rule1: This is a basic rule: if the cougar does not destroy the wall constructed by the husky, then the conclusion that the husky acquires a photo of the pelikan follows immediately and effectively. Rule2: Be careful when something shouts at the seahorse but does not manage to convince the wolf because in this case it will, surely, not destroy the wall built by the husky (this may or may not be problematic). Based on the game state and the rules and preferences, does the husky acquire a photograph of the pelikan?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-17",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The poodle hides the cards that she has from the ant, and neglects the seal. And the rules of the game are as follows. Rule1: Be careful when something does not hide the cards that she has from the ant but neglects the seal because in this case it will, surely, acquire a photo of the llama (this may or may not be problematic). Rule2: There exists an animal which acquires a photograph of the llama? Then the frog definitely borrows a weapon from the gorilla. Based on the game state and the rules and preferences, does the frog borrow one of the weapons of the gorilla?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-18",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The finch is named Pashmak. The swallow is named Peddi. And the rules of the game are as follows. Rule1: If you are positive that one of the animals does not fall on a square of the akita, you can be certain that it will enjoy the companionship of the walrus without a doubt. Rule2: The finch does not enjoy the companionship of the walrus whenever at least one animal disarms the gorilla. Rule3: The finch will not fall on a square that belongs to the akita if it (the finch) has a name whose first letter is the same as the first letter of the swallow's name. Rule4: Here is an important piece of information about the finch: if it is less than three years old then it falls on a square of the akita for sure. Rule2 is preferred over Rule1. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the finch enjoy the company of the walrus?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-19",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The fish manages to convince the gadwall. The husky enjoys the company of the pigeon. And the rules of the game are as follows. Rule1: If the fish manages to convince the gadwall, then the gadwall leaves the houses that are occupied by the dragonfly. Rule2: This is a basic rule: if the husky refuses to help the gadwall, then the conclusion that \"the gadwall will not swear to the beetle\" follows immediately and effectively. Rule3: If something enjoys the company of the pigeon, then it refuses to help the gadwall, too. Based on the game state and the rules and preferences, does the gadwall swear to the beetle?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-20",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The seal wants to see the llama. The wolf creates one castle for the beetle. And the rules of the game are as follows. Rule1: If at least one animal wants to see the llama, then the akita swears to the pelikan. Rule2: Be careful when something does not swear to the pelikan but brings an oil tank for the husky because in this case it will, surely, dance with the ostrich (this may or may not be problematic). Rule3: The akita brings an oil tank for the husky whenever at least one animal creates a castle for the beetle. Based on the game state and the rules and preferences, does the akita dance with the ostrich?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "DifficultConflict-depth2-23",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The frog destroys the wall constructed by the wolf. The mule does not hug the wolf. And the rules of the game are as follows. Rule1: For the wolf, if you have two pieces of evidence 1) that mule does not hug the wolf and 2) that frog disarms the wolf, then you can add wolf will never hide the cards that she has from the songbird to your conclusions. Rule2: If the wolf does not hide her cards from the songbird, then the songbird borrows a weapon from the butterfly. Based on the game state and the rules and preferences, does the songbird borrow one of the weapons of the butterfly?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The crab leaves the houses occupied by the dragon. The german shepherd stops the victory of the fish. The walrus swims in the pool next to the house of the reindeer. The dove does not refuse to help the swallow. And the rules of the game are as follows. Rule1: If something stops the victory of the fish, then it hides her cards from the mermaid, too. Rule2: If there is evidence that one animal, no matter which one, hides her cards from the mermaid, then the wolf is not going to leave the houses occupied by the owl. Rule3: If the walrus swims in the pool next to the house of the reindeer, then the reindeer suspects the truthfulness of the camel. Based on the game state and the rules and preferences, does the wolf leave the houses occupied by the owl?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-27",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beaver wants to see the dolphin. The dolphin captures the king of the mule. The dolphin suspects the truthfulness of the crab. The lizard stops the victory of the starling. The songbird enjoys the company of the poodle. The swan unites with the duck. And the rules of the game are as follows. Rule1: If something unites with the duck, then it borrows a weapon from the peafowl, too. Rule2: Be careful when something captures the king (i.e. the most important piece) of the mule and also suspects the truthfulness of the crab because in this case it will surely stop the victory of the dalmatian (this may or may not be problematic). Rule3: The dalmatian unquestionably captures the king of the otter, in the case where the dolphin stops the victory of the dalmatian. Based on the game state and the rules and preferences, does the dalmatian capture the king of the otter?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-28",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita surrenders to the dugong. The dachshund creates one castle for the dugong. The dragonfly stops the victory of the walrus. The frog has 16 dollars, and is a farm worker. The frog is watching a movie from 2016. The gorilla has 53 dollars. The flamingo does not fall on a square of the bison. And the rules of the game are as follows. Rule1: If the akita surrenders to the dugong and the dachshund creates a castle for the dugong, then the dugong will not suspect the truthfulness of the elk. Rule2: The frog will not surrender to the stork if it (the frog) is watching a movie that was released after Obama's presidency started. Rule3: From observing that an animal does not surrender to the stork, one can conclude the following: that animal will not bring an oil tank for the badger. Based on the game state and the rules and preferences, does the frog bring an oil tank for the badger?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-30",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The chinchilla swears to the seal. The mannikin hugs the dachshund. The mouse trades one of its pieces with the cobra. The snake swims in the pool next to the house of the bulldog. The swallow borrows one of the weapons of the cobra. The pigeon does not hug the dragonfly. And the rules of the game are as follows. Rule1: If at least one animal hugs the dachshund, then the chinchilla hugs the bear. Rule2: From observing that one animal pays some $$$ to the dugong, one can conclude that it also manages to persuade the cougar, undoubtedly. Rule3: For the cobra, if you have two pieces of evidence 1) the swallow borrows a weapon from the cobra and 2) the mouse trades one of its pieces with the cobra, then you can add \"cobra pays some $$$ to the dugong\" to your conclusions. Based on the game state and the rules and preferences, does the cobra manage to convince the cougar?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-33",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita stops the victory of the woodpecker. The chihuahua has a card that is white in color. The chihuahua has a football with a radius of 17 inches, and invented a time machine. The goat pays money to the liger. The liger published a high-quality paper. The starling does not suspect the truthfulness of the husky. And the rules of the game are as follows. Rule1: The living creature that shouts at the finch will also pay some $$$ to the cougar, without a doubt. Rule2: If the chihuahua has a football that fits in a 36.5 x 30.5 x 30.9 inches box, then the chihuahua shouts at the finch. Rule3: If the liger has a high-quality paper, then the liger reveals a secret to the monkey. Rule4: The chihuahua will shout at the finch if it (the chihuahua) has a card whose color starts with the letter \"w\". Based on the game state and the rules and preferences, does the chihuahua pay money to the cougar?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-38",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The elk has a football with a radius of 17 inches. The fangtooth smiles at the vampire. The german shepherd creates one castle for the crab. The ostrich manages to convince the rhino. And the rules of the game are as follows. Rule1: The elk will not fall on a square that belongs to the owl if it (the elk) has a basketball that fits in a 27.5 x 26.7 x 24.3 inches box. Rule2: If at least one animal creates a castle for the crab, then the llama manages to convince the chinchilla. Rule3: From observing that an animal does not manage to convince the chinchilla, one can conclude that it swears to the chihuahua. Based on the game state and the rules and preferences, does the llama swear to the chihuahua?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-43",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cougar is 4 and a half years old. The dove stops the victory of the poodle. The german shepherd smiles at the lizard. The woodpecker surrenders to the dragon. And the rules of the game are as follows. Rule1: The cougar will want to see the chihuahua if it (the cougar) is more than two years old. Rule2: The zebra invests in the company owned by the songbird whenever at least one animal stops the victory of the poodle. Rule3: This is a basic rule: if the zebra invests in the company whose owner is the songbird, then the conclusion that \"the songbird will not unite with the swallow\" follows immediately and effectively. Based on the game state and the rules and preferences, does the songbird unite with the swallow?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-65",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dugong refuses to help the dragon. The seal has a card that is white in color. The seal has a cutter. The worm destroys the wall constructed by the peafowl. The crow does not take over the emperor of the swan. And the rules of the game are as follows. Rule1: If the dugong refuses to help the dragon, then the dragon takes over the emperor of the dachshund. Rule2: If at least one animal borrows one of the weapons of the flamingo, then the liger hides the cards that she has from the ostrich. Rule3: Regarding the seal, if it has a card whose color appears in the flag of Italy, then we can conclude that it smiles at the flamingo. Rule4: If the seal has a leafy green vegetable, then the seal smiles at the flamingo. Based on the game state and the rules and preferences, does the liger hide the cards that she has from the ostrich?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-71",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The ant is currently in Paris. The coyote swears to the bee. The duck has 23 dollars. The fish captures the king of the leopard. The goose has 25 dollars. The seahorse has 63 dollars. The seahorse has a card that is blue in color. And the rules of the game are as follows. Rule1: The seahorse will not disarm the bear if it (the seahorse) has a card whose color appears in the flag of Belgium. Rule2: If the ant is in France at the moment, then the ant refuses to help the starling. Rule3: The seahorse will not disarm the bear if it (the seahorse) has more money than the duck and the goose combined. Rule4: This is a basic rule: if the ant does not refuse to help the starling, then the conclusion that the starling borrows a weapon from the stork follows immediately and effectively. Based on the game state and the rules and preferences, does the starling borrow one of the weapons of the stork?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-77",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The butterfly calls the goat. The otter swims in the pool next to the house of the frog. The pelikan enjoys the company of the bee. The stork is a school principal. And the rules of the game are as follows. Rule1: If something manages to convince the frog, then it invests in the company owned by the crab, too. Rule2: The crab unquestionably hugs the crow, in the case where the otter invests in the company owned by the crab. Rule3: If the stork works in education, then the stork pays some $$$ to the beetle. Based on the game state and the rules and preferences, does the crab hug the crow?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-84",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The akita hides the cards that she has from the owl. The bison has a 15 x 13 inches notebook. The german shepherd brings an oil tank for the beaver. The coyote does not want to see the gadwall. And the rules of the game are as follows. Rule1: If the owl has a high-quality paper, then the owl does not call the cobra. Rule2: The owl unquestionably calls the cobra, in the case where the akita hides her cards from the owl. Rule3: Regarding the bison, if it has a notebook that fits in a 18.5 x 20.9 inches box, then we can conclude that it does not disarm the fish. Rule4: The cobra unquestionably unites with the pigeon, in the case where the owl calls the cobra. Rule1 is preferred over Rule2. Based on the game state and the rules and preferences, does the cobra unite with the pigeon?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-92",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The llama hides the cards that she has from the snake. The shark smiles at the otter. The dragon does not stop the victory of the starling. The mule does not swim in the pool next to the house of the bear. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, smiles at the otter, then the ostrich is not going to swim in the pool next to the house of the ant. Rule2: If something does not want to see the dugong, then it stops the victory of the swan. Rule3: If at least one animal stops the victory of the dolphin, then the starling does not stop the victory of the swan. Rule4: If the dragon does not stop the victory of the starling, then the starling does not pay money to the dugong. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the starling stop the victory of the swan?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-99",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The lizard suspects the truthfulness of the ostrich. The monkey shouts at the husky. The shark calls the duck. The ant does not swim in the pool next to the house of the gorilla. And the rules of the game are as follows. Rule1: If at least one animal suspects the truthfulness of the ostrich, then the fangtooth does not manage to convince the chihuahua. Rule2: This is a basic rule: if the fangtooth does not manage to convince the chihuahua, then the conclusion that the chihuahua enjoys the companionship of the mannikin follows immediately and effectively. Rule3: The duck does not invest in the company whose owner is the wolf, in the case where the shark calls the duck. Based on the game state and the rules and preferences, does the chihuahua enjoy the company of the mannikin?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-103",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The badger pays money to the zebra. The chinchilla negotiates a deal with the seal. The pigeon creates one castle for the badger. The songbird swears to the badger. The dragon does not capture the king of the monkey. And the rules of the game are as follows. Rule1: The living creature that pays some $$$ to the zebra will also swear to the reindeer, without a doubt. Rule2: One of the rules of the game is that if the badger swears to the reindeer, then the reindeer will never manage to persuade the owl. Rule3: In order to conclude that badger does not negotiate a deal with the vampire, two pieces of evidence are required: firstly the songbird swears to the badger and secondly the pigeon creates one castle for the badger. Based on the game state and the rules and preferences, does the reindeer manage to convince the owl?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "SomeDistractors-depth2-118",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beaver brings an oil tank for the zebra. The llama got a well-paid job. The llama negotiates a deal with the crab. The poodle got a well-paid job. And the rules of the game are as follows. Rule1: If something does not enjoy the company of the ostrich, then it does not suspect the truthfulness of the crow. Rule2: The llama will not destroy the wall built by the pigeon if it (the llama) has a high salary. Rule3: Regarding the poodle, if it has a high salary, then we can conclude that it does not enjoy the companionship of the ostrich. Based on the game state and the rules and preferences, does the poodle suspect the truthfulness of the crow?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-1",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dachshund has a football with a radius of 15 inches. And the rules of the game are as follows. Rule1: If the dachshund has a football that fits in a 36.6 x 33.1 x 40.7 inches box, then the dachshund brings an oil tank for the worm. Rule2: If at least one animal brings an oil tank for the worm, then the stork does not dance with the butterfly. Based on the game state and the rules and preferences, does the stork dance with the butterfly?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-2",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison will turn 3 years old in a few minutes. The cougar has 56 dollars. The dove has 75 dollars. The vampire has 65 dollars. And the rules of the game are as follows. Rule1: If the vampire unites with the bison, then the bison is not going to capture the king (i.e. the most important piece) of the husky. Rule2: If the vampire has more money than the cougar and the dove combined, then the vampire unites with the bison. Rule3: If something borrows one of the weapons of the goose, then it captures the king of the husky, too. Rule4: Here is an important piece of information about the bison: if it is more than 11 months old then it unites with the goose for sure. Rule3 is preferred over Rule1. Based on the game state and the rules and preferences, does the bison capture the king of the husky?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-3",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The beaver negotiates a deal with the bee. The pelikan acquires a photograph of the bee. The zebra does not dance with the bee. And the rules of the game are as follows. Rule1: If the bee brings an oil tank for the dolphin, then the dolphin reveals a secret to the pigeon. Rule2: For the bee, if you have two pieces of evidence 1) the pelikan acquires a photo of the bee and 2) the beaver negotiates a deal with the bee, then you can add \"bee brings an oil tank for the dolphin\" to your conclusions. Rule3: This is a basic rule: if the zebra does not dance with the bee, then the conclusion that the bee will not bring an oil tank for the dolphin follows immediately and effectively. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the dolphin reveal a secret to the pigeon?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-4",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The wolf has a 15 x 20 inches notebook, and has a banana-strawberry smoothie. And the rules of the game are as follows. Rule1: If at least one animal trades one of its pieces with the crow, then the mule does not destroy the wall built by the swan. Rule2: If the wolf works in agriculture, then the wolf does not trade one of its pieces with the crow. Rule3: The wolf will trade one of the pieces in its possession with the crow if it (the wolf) has something to drink. Rule4: Regarding the wolf, if it has a notebook that fits in a 14.5 x 25.9 inches box, then we can conclude that it does not trade one of its pieces with the crow. Rule2 is preferred over Rule3. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the mule destroy the wall constructed by the swan?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-6",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The ostrich shouts at the dragonfly. The vampire is named Pashmak. The worm is named Paco. And the rules of the game are as follows. Rule1: If the vampire has a name whose first letter is the same as the first letter of the worm's name, then the vampire trades one of the pieces in its possession with the duck. Rule2: Here is an important piece of information about the vampire: if it is in Germany at the moment then it does not acquire a photograph of the cougar for sure. Rule3: If something trades one of its pieces with the duck and acquires a photo of the cougar, then it shouts at the bison. Rule4: If there is evidence that one animal, no matter which one, shouts at the dragonfly, then the vampire acquires a photograph of the cougar undoubtedly. Rule2 is preferred over Rule4. Based on the game state and the rules and preferences, does the vampire shout at the bison?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-7",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The frog has 83 dollars. The lizard does not hug the husky. And the rules of the game are as follows. Rule1: The snake will not create one castle for the cobra, in the case where the lizard does not build a power plant close to the green fields of the snake. Rule2: From observing that an animal does not hug the husky, one can conclude the following: that animal will not build a power plant close to the green fields of the snake. Rule3: If at least one animal smiles at the bison, then the snake creates one castle for the cobra. Rule4: Regarding the lizard, if it has more money than the frog, then we can conclude that it builds a power plant close to the green fields of the snake. Rule3 is preferred over Rule1. Rule4 is preferred over Rule2. Based on the game state and the rules and preferences, does the snake create one castle for the cobra?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The badger invests in the company whose owner is the beetle. The beetle has 87 dollars. The bison has 3 dollars. The dalmatian has 47 dollars. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the beetle does not borrow a weapon from the shark, then the shark will, without hesitation, destroy the wall built by the dragonfly. Rule2: One of the rules of the game is that if the badger does not shout at the beetle, then the beetle will never borrow a weapon from the shark. Rule3: Here is an important piece of information about the beetle: if it has more money than the dalmatian and the bison combined then it borrows a weapon from the shark for sure. Rule3 is preferred over Rule2. Based on the game state and the rules and preferences, does the shark destroy the wall constructed by the dragonfly?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The butterfly is named Buddy. The songbird is named Milo. The songbird is two years old. And the rules of the game are as follows. Rule1: If there is evidence that one animal, no matter which one, pays some $$$ to the badger, then the gadwall is not going to unite with the goat. Rule2: If the songbird is watching a movie that was released before Shaquille O'Neal retired, then the songbird does not pay some $$$ to the badger. Rule3: Here is an important piece of information about the songbird: if it is less than 3 years old then it pays money to the badger for sure. Rule4: The songbird will not pay some $$$ to the badger if it (the songbird) has a name whose first letter is the same as the first letter of the butterfly's name. Rule2 is preferred over Rule3. Rule4 is preferred over Rule3. Based on the game state and the rules and preferences, does the gadwall unite with the goat?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-14",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The wolf has a backpack, and lost her keys. The wolf has a cappuccino. And the rules of the game are as follows. Rule1: Here is an important piece of information about the wolf: if it has something to drink then it does not unite with the pelikan for sure. Rule2: If the wolf is less than four years old, then the wolf does not unite with the pelikan. Rule3: If the wolf has something to drink, then the wolf unites with the pelikan. Rule4: The wolf will unite with the pelikan if it (the wolf) does not have her keys. Rule5: The bison surrenders to the mouse whenever at least one animal brings an oil tank for the pelikan. Rule3 is preferred over Rule1. Rule3 is preferred over Rule2. Rule4 is preferred over Rule1. Rule4 is preferred over Rule2. Based on the game state and the rules and preferences, does the bison surrender to the mouse?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-15",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison hates Chris Ronaldo. The bison is currently in Montreal. And the rules of the game are as follows. Rule1: If at least one animal falls on a square that belongs to the cobra, then the otter surrenders to the beetle. Rule2: Regarding the bison, if it is a fan of Chris Ronaldo, then we can conclude that it falls on a square of the cobra. Rule3: Regarding the bison, if it is in Canada at the moment, then we can conclude that it falls on a square that belongs to the cobra. Based on the game state and the rules and preferences, does the otter surrender to the beetle?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-16",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The duck is a nurse, and struggles to find food. The snake reduced her work hours recently. And the rules of the game are as follows. Rule1: Regarding the duck, if it works in healthcare, then we can conclude that it dances with the poodle. Rule2: The duck will dance with the poodle if it (the duck) has access to an abundance of food. Rule3: If the snake works fewer hours than before, then the snake does not refuse to help the poodle. Rule4: In order to conclude that the poodle does not fall on a square that belongs to the gorilla, two pieces of evidence are required: firstly that the snake will not refuse to help the poodle and secondly the duck dances with the poodle. Based on the game state and the rules and preferences, does the poodle fall on a square of the gorilla?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-17",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The monkey has 1 friend that is adventurous and 6 friends that are not. The monkey has a card that is blue in color. And the rules of the game are as follows. Rule1: The butterfly borrows one of the weapons of the dragon whenever at least one animal takes over the emperor of the cougar. Rule2: If the monkey has more than 1 friend, then the monkey wants to see the cougar. Based on the game state and the rules and preferences, does the butterfly borrow one of the weapons of the dragon?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-23",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The flamingo assassinated the mayor. The flamingo has some romaine lettuce. And the rules of the game are as follows. Rule1: The flamingo will negotiate a deal with the wolf if it (the flamingo) has a leafy green vegetable. Rule2: Here is an important piece of information about the flamingo: if it voted for the mayor then it negotiates a deal with the wolf for sure. Rule3: If there is evidence that one animal, no matter which one, manages to convince the wolf, then the fangtooth creates one castle for the rhino undoubtedly. Based on the game state and the rules and preferences, does the fangtooth create one castle for the rhino?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-24",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The dove suspects the truthfulness of the starling. The duck is watching a movie from 2001, and reveals a secret to the songbird. The duck trades one of its pieces with the dalmatian. And the rules of the game are as follows. Rule1: For the bee, if the belief is that the starling does not smile at the bee but the duck captures the king of the bee, then you can add \"the bee stops the victory of the snake\" to your conclusions. Rule2: One of the rules of the game is that if the dove suspects the truthfulness of the starling, then the starling will never smile at the bee. Rule3: Regarding the duck, if it is watching a movie that was released before Justin Trudeau became the prime minister of Canada, then we can conclude that it captures the king of the bee. Based on the game state and the rules and preferences, does the bee stop the victory of the snake?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "KnowledgeHeavy-depth2-25",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The coyote is watching a movie from 2023. And the rules of the game are as follows. Rule1: If the coyote is watching a movie that was released after Maradona died, then the coyote smiles at the seal. Rule2: One of the rules of the game is that if the coyote smiles at the seal, then the seal will never borrow a weapon from the vampire. Based on the game state and the rules and preferences, does the seal borrow one of the weapons of the vampire?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-5",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison is currently in Paris. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the bison dances with the bear, then the bear will, without hesitation, build a power plant close to the green fields of the lizard. Rule2: Regarding the bison, if it is in France at the moment, then we can conclude that it does not dance with the bear. Based on the game state and the rules and preferences, does the bear build a power plant near the green fields of the lizard?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-8",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The german shepherd builds a power plant near the green fields of the owl. The goose neglects the dinosaur. And the rules of the game are as follows. Rule1: If the goose negotiates a deal with the dinosaur, then the dinosaur acquires a photo of the starling. Rule2: For the starling, if the belief is that the dinosaur acquires a photograph of the starling and the german shepherd does not manage to convince the starling, then you can add \"the starling manages to persuade the dachshund\" to your conclusions. Rule3: The living creature that builds a power plant near the green fields of the owl will never manage to persuade the starling. Based on the game state and the rules and preferences, does the starling manage to convince the dachshund?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-10",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The otter is named Bella. The pelikan neglects the zebra. The zebra has a knapsack, and is named Blossom. The german shepherd does not bring an oil tank for the zebra. And the rules of the game are as follows. Rule1: In order to conclude that the zebra will never acquire a photograph of the owl, two pieces of evidence are required: firstly the pelikan should neglect the zebra and secondly the german shepherd should not bring an oil tank for the zebra. Rule2: From observing that an animal does not acquire a photograph of the owl, one can conclude the following: that animal will not trade one of the pieces in its possession with the shark. Based on the game state and the rules and preferences, does the zebra trade one of its pieces with the shark?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-11",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The seahorse has some spinach. The seahorse is currently in Milan. And the rules of the game are as follows. Rule1: Here is an important piece of information about the seahorse: if it has a device to connect to the internet then it borrows one of the weapons of the swallow for sure. Rule2: If the seahorse is in Africa at the moment, then the seahorse borrows a weapon from the swallow. Rule3: The living creature that borrows a weapon from the swallow will also trade one of the pieces in its possession with the reindeer, without a doubt. Based on the game state and the rules and preferences, does the seahorse trade one of its pieces with the reindeer?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-12",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The pelikan has a bench. The pelikan is watching a movie from 2010. And the rules of the game are as follows. Rule1: The pelikan will manage to convince the peafowl if it (the pelikan) is watching a movie that was released after Facebook was founded. Rule2: The living creature that manages to persuade the peafowl will also invest in the company owned by the liger, without a doubt. Rule3: If the pelikan has a musical instrument, then the pelikan manages to convince the peafowl. Based on the game state and the rules and preferences, does the pelikan invest in the company whose owner is the liger?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-13",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The owl wants to see the dragon. The mannikin does not smile at the dragon. And the rules of the game are as follows. Rule1: If at least one animal brings an oil tank for the mermaid, then the snake does not tear down the castle that belongs to the coyote. Rule2: For the dragon, if you have two pieces of evidence 1) the mannikin does not smile at the dragon and 2) the owl wants to see the dragon, then you can add \"dragon brings an oil tank for the mermaid\" to your conclusions. Based on the game state and the rules and preferences, does the snake tear down the castle that belongs to the coyote?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-15",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bee is named Lily. The crab has 73 dollars. The frog has 76 dollars. The swan is named Lola, and is holding her keys. The swan does not tear down the castle that belongs to the bee. And the rules of the game are as follows. Rule1: Regarding the frog, if it has more money than the crab, then we can conclude that it swims inside the pool located besides the house of the zebra. Rule2: If the swan does not have her keys, then the swan wants to see the zebra. Rule3: The zebra unquestionably trades one of the pieces in its possession with the chinchilla, in the case where the frog swims inside the pool located besides the house of the zebra. Rule4: If the swan has a name whose first letter is the same as the first letter of the bee's name, then the swan wants to see the zebra. Based on the game state and the rules and preferences, does the zebra trade one of its pieces with the chinchilla?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-16",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The fish has a green tea. The otter tears down the castle that belongs to the fangtooth. And the rules of the game are as follows. Rule1: If the fish has something to drink, then the fish dances with the akita. Rule2: If there is evidence that one animal, no matter which one, tears down the castle that belongs to the fangtooth, then the lizard invests in the company whose owner is the swan undoubtedly. Rule3: The swan does not suspect the truthfulness of the chinchilla whenever at least one animal dances with the akita. Based on the game state and the rules and preferences, does the swan suspect the truthfulness of the chinchilla?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-21",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The bison does not call the mouse. And the rules of the game are as follows. Rule1: If the mouse has a football that fits in a 43.9 x 45.6 x 44.8 inches box, then the mouse does not enjoy the companionship of the bulldog. Rule2: If you are positive that you saw one of the animals builds a power plant near the green fields of the dragonfly, you can be certain that it will not swim in the pool next to the house of the walrus. Rule3: The mouse unquestionably enjoys the companionship of the bulldog, in the case where the bison does not call the mouse. Rule4: If the mouse enjoys the companionship of the bulldog, then the bulldog swims in the pool next to the house of the walrus. Rule1 is preferred over Rule3. Rule2 is preferred over Rule4. Based on the game state and the rules and preferences, does the bulldog swim in the pool next to the house of the walrus?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-24",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The mule swims in the pool next to the house of the gorilla. The seal hides the cards that she has from the mule. And the rules of the game are as follows. Rule1: One of the rules of the game is that if the seal hides the cards that she has from the mule, then the mule will, without hesitation, dance with the leopard. Rule2: If you see that something swims in the pool next to the house of the gorilla and suspects the truthfulness of the lizard, what can you certainly conclude? You can conclude that it does not dance with the leopard. Rule3: There exists an animal which dances with the leopard? Then the crow definitely swears to the chinchilla. Rule2 is preferred over Rule1. Based on the game state and the rules and preferences, does the crow swear to the chinchilla?",
+        "solution": "proved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-25",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The cougar brings an oil tank for the ostrich, and is currently in Montreal. The leopard takes over the emperor of the dugong. The cougar does not invest in the company whose owner is the ant. And the rules of the game are as follows. Rule1: Be careful when something brings an oil tank for the ostrich but does not invest in the company owned by the ant because in this case it will, surely, not borrow one of the weapons of the bison (this may or may not be problematic). Rule2: There exists an animal which takes over the emperor of the dugong? Then the elk definitely suspects the truthfulness of the cougar. Rule3: If the elk suspects the truthfulness of the cougar, then the cougar is not going to stop the victory of the snake. Based on the game state and the rules and preferences, does the cougar stop the victory of the snake?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-32",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The frog has a card that is yellow in color, and has a cell phone. The frog is watching a movie from 1963. And the rules of the game are as follows. Rule1: If the frog has a device to connect to the internet, then the frog does not create one castle for the poodle. Rule2: One of the rules of the game is that if the frog creates a castle for the poodle, then the poodle will, without hesitation, fall on a square of the dugong. Rule3: The frog will not create a castle for the poodle if it (the frog) has a card with a primary color. Based on the game state and the rules and preferences, does the poodle fall on a square of the dugong?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-34",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The liger has a card that is black in color, and was born 24 months ago. And the rules of the game are as follows. Rule1: The liger will manage to persuade the pelikan if it (the liger) has a card whose color appears in the flag of France. Rule2: The liger will manage to convince the pelikan if it (the liger) is less than four years old. Rule3: The living creature that manages to persuade the pelikan will never unite with the dragonfly. Based on the game state and the rules and preferences, does the liger unite with the dragonfly?",
+        "solution": "disproved",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-35",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The lizard destroys the wall constructed by the duck. The swan does not suspect the truthfulness of the gadwall. And the rules of the game are as follows. Rule1: If you see that something leaves the houses occupied by the seahorse and creates one castle for the seahorse, what can you certainly conclude? You can conclude that it also refuses to help the mannikin. Rule2: The snake leaves the houses occupied by the seahorse whenever at least one animal destroys the wall constructed by the duck. Rule3: If there is evidence that one animal, no matter which one, suspects the truthfulness of the gadwall, then the snake creates one castle for the seahorse undoubtedly. Based on the game state and the rules and preferences, does the snake refuse to help the mannikin?",
+        "solution": "unknown",
+        "extra_info": {}
+    },
+    {
+        "source": "BGQA",
+        "id": "EasyConflict-depth2-40",
+        "problem": "A few players are playing a boardgame. The current state of the game is as follows. The goose has 95 dollars, and is currently in Argentina. The vampire has 81 dollars. And the rules of the game are as follows. Rule1: If the goose is in Italy at the moment, then the goose unites with the bee. Rule2: If you are positive that you saw one of the animals refuses to help the dragon, you can be certain that it will also swim in the pool next to the house of the worm. Rule3: There exists an animal which unites with the bee? Then, the wolf definitely does not swim in the pool next to the house of the worm. Rule4: The goose will unite with the bee if it (the goose) has more money than the vampire. Rule2 is preferred over Rule3. Based on the game state and the rules and preferences, does the wolf swim in the pool next to the house of the worm?",
+        "solution": "disproved",
+        "extra_info": {}
+    }
+]

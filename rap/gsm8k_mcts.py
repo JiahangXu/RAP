@@ -196,6 +196,8 @@ def reasoning_mcts_search(question: str,
     elif task == "sat":
         match = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question.split(" A.")[0])
         overall_question = match[1] if match else question.split(" A. ")[0]
+    elif task == "bgqa":
+        overall_question = question.split("Based on the game state and the rules and preferences, ")[-1].strip()
     overall_question = overall_question[0].upper() + overall_question[1:]
     prompt_index = prompts['index']
 

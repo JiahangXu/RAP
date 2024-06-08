@@ -1,3 +1,4 @@
+import re
 import datetime
 import subprocess
 import random
@@ -12,7 +13,7 @@ description: {job_name}
 {target}
 
 code:
-  local_dir: $CONFIG_DIR/../
+  local_dir: $CONFIG_DIR/../../
 
 jobs:
 {jobs}
@@ -20,12 +21,12 @@ jobs:
 
 job_template = \
 """- name: {job_name}
-  sku: NDH100v5:G8
+  sku: 80G8
   priority: high
   mpi: True
 
   command:
-    - python dynamic_ft.py
+    - pip install vllm transformers fire
     - sleep infinity
 
   submit_args: 
@@ -36,8 +37,9 @@ job_template = \
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('func', choices=['submit', 'debug'], help='submit job or local debug')
-    parser.add_argument('--target', default='msrschvc_h100', choices=list(target_dict.keys()), help='where to submit')
+    parser.add_argument('--target', default='genai_a100', choices=list(target_dict.keys()), help='where to submit')
     parser.add_argument("--mark", type=str, required=False, default=None)
+    
     args = parser.parse_args()
 
     if args.func == 'submit':
@@ -48,7 +50,7 @@ def main():
     date = datetime.datetime.now().strftime('%m%d%H%M')
     job_name = f'{args.mark}-{date}'
     jobs = job_template.format(
-        job_name=job_name, 
+        job_name=job_name,
         debug=mode,
     )
     description = f'{job_name}'
@@ -72,6 +74,5 @@ def main():
         # subprocess.run(f'amlt run -d {description} {tmp_name} {job_name}', shell=True)
         subprocess.run(["amlt", "run", "-d", description, tmp_name, job_name])
 
-   
 if __name__ == "__main__":
     main()

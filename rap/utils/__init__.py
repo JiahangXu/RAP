@@ -4,11 +4,12 @@ from .math import MATHEvaluator, get_math_dataset
 from .logiqa import LOGIQAEvaluator, get_logiqa_dataset
 from .sat import SATEvaluator, get_sat_dataset
 from .svamp import SVAMPEvaluator, get_svamp_dataset
+from .bgqa import get_bgqa_dataset
 
 def get_evaluator(task):
     if task == 'gsm8k':
         return GSM8KEvaluator()
-    elif task == 'folio':
+    elif task == 'folio' or task == 'bgqa':
         return FOLIOEvaluator()
     elif task == 'math':
         return MATHEvaluator()
@@ -40,5 +41,7 @@ def get_one_dataset(task):
         return get_sat_dataset
     elif task == 'svamp':
         return get_svamp_dataset
+    elif task == 'bgqa':
+        return get_bgqa_dataset
     else:
         raise NotImplementedError(f"Task {task} not implemented yet")
