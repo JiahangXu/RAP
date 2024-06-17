@@ -21,7 +21,7 @@ jobs:
 
 job_template = \
 """- name: {job_name}
-  sku: 80G1
+  sku: G1
   priority: high
   mpi: True
 
@@ -41,13 +41,7 @@ job_template = \
 """
 
 model_url = {
-    "Meta-Llama-3-8B": "https://zhenting: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@huggingface.co/meta-llama/Meta-Llama-3-8B",
-    "Meta-Llama-3-8B-Instruct": "https://zhenting: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@huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-    "Llama-2-13b-hf": "https://Jiahang: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@huggingface.co/meta-llama/Llama-2-13b-hf",
-    "Llama-2-7b-hf": "https://Jiahang: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@huggingface.co/meta-llama/Llama-2-7b-hf",
-    "Mistral-7B-v0.1": "https://Jiahang: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@huggingface.co/mistralai/Mistral-7B-v0.1",
-    "Phi-3-mini-4k-instruct": "https://Jiahang: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@huggingface.co/microsoft/Phi-3-mini-4k-instruct",
-    "Mistral-7B-Instruct-v0.2": "https://Jiahang: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@huggingface.co/mistralai/Mistral-7B-Instruct-v0.2"
+    # masked
 }
 
 def main():
@@ -96,7 +90,7 @@ def main():
         subprocess.run(["amlt", "run", "-t", "local", "--use-sudo", tmp_name, "--devices", "all"])
     else:
         # subprocess.run(f'amlt run -d {description} {tmp_name} {job_name}', shell=True)
-        subprocess.run(["amlt", "run", "-d", description, tmp_name, job_name])
+        subprocess.run(["amlt", "run", "-d", description, tmp_name, job_name, "--sla", "standard"])
 
 if __name__ == "__main__":
     main()
