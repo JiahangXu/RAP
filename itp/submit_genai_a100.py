@@ -21,7 +21,7 @@ jobs:
 
 job_template = \
 """- name: {job_name}
-  sku: G8
+  sku: G1
   priority: high
   mpi: True
 
