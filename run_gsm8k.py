@@ -18,6 +18,7 @@ import json
 import random
 import mlflow
 import numpy as np
+import math
 from pathlib import Path
 from tqdm import tqdm
 from collections import Counter
@@ -75,7 +76,8 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
               w_exp=1,
               r_alpha=0.5,
               r1_default=1,
-              resume=0,
+              start_idx=0,
+              end_idx=math.inf,
               log_dir=None,
               speedup_confidence_batch_size=None,
               output_ans_list=False,
@@ -88,7 +90,7 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
             log_dir = f'/mnt/teamdrive/jiahang_temp/RAP/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
         else:
             log_dir = f'logs/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
-        
+
     os.makedirs(log_dir, exist_ok=True)
     if output_ans_list:
         if sing:
@@ -113,10 +115,10 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
 
     if model_type == "hf":
         model, tokenizer = load_hf(model_ckpt)
-        world_model = QueryHfModel(model, tokenizer, max_response_length=max_response_length, log_file=None)
+        world_model = QueryHfModel(model, tokenizer, max_response_length=max_response_length, log_file=log_dir)
     elif model_type == "vllm":
         model, tokenizer = load_vllm(model_ckpt)
-        world_model = QueryVLLM(model, tokenizer, max_response_length=max_response_length, log_file=None)
+        world_model = QueryVLLM(model, tokenizer, max_response_length=max_response_length, log_file=log_dir)
 
     examples = get_dataset(data_split)
     with open(prompts) as f:
@@ -127,7 +129,7 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
     total_correct = [0] * mcts_rollouts
     total_model_limit_correct, total_major_vote_correct = 0, 0
     for i, example in enumerate((pbar := tqdm(examples, disable=disable_tqdm, position=1))):
-        if i < resume:
+        if i < start_idx or i >= end_idx:
             continue
         try:
             question = example['question']
@@ -189,16 +191,16 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
                     with open(os.path.join(log_dir2, f"{example['id']}.json"), 'w') as f:
                         json.dump(example_res_sum, f, indent=2)
 
-                tqdm.write(' '.join(f'{c/(i+1-resume):0.3f}' for c in total_correct))
-                desc = f'acc: {total_correct[-1]}/{i+1-resume}={total_correct[-1]/(i+1-resume)*100:.3f}'
+                tqdm.write(' '.join(f'{c/(i+1-start_idx):0.3f}' for c in total_correct))
+                desc = f'acc: {total_correct[-1]}/{i+1-start_idx}={total_correct[-1]/(i+1-start_idx)*100:.3f}'
                 if output_ans_list:
-                    desc += f", model_limit: {total_model_limit_correct}/{i+1-resume}={total_model_limit_correct/(i+1-resume)*100:.3f}, " + \
-                            f"major_vote: {total_major_vote_correct}/{i+1-resume}={total_major_vote_correct/(i+1-resume)*100:.3f}"
+                    desc += f", model_limit: {total_model_limit_correct}/{i+1-start_idx}={total_model_limit_correct/(i+1-start_idx)*100:.3f}, " + \
+                            f"major_vote: {total_major_vote_correct}/{i+1-start_idx}={total_major_vote_correct/(i+1-start_idx)*100:.3f}"
                 pbar.set_description(desc)
-                mlflow.log_metric("acc", total_correct[-1]/(i+1-resume)*100)
+                mlflow.log_metric("acc", total_correct[-1]/(i+1-start_idx)*100)
                 if output_ans_list:
-                    mlflow.log_metric("model_limit_acc", total_model_limit_correct/(i+1-resume)*100)
-                    mlflow.log_metric("major_vote_acc", total_major_vote_correct/(i+1-resume)*100)
+                    mlflow.log_metric("model_limit_acc", total_model_limit_correct/(i+1-start_idx)*100)
+                    mlflow.log_metric("major_vote_acc", total_major_vote_correct/(i+1-start_idx)*100)
         except Exception as e:
             print(f"Error in example {example['id']}: {e}")
 

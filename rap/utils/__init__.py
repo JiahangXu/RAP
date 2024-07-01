@@ -5,6 +5,7 @@ from .logiqa import LOGIQAEvaluator, get_logiqa_dataset
 from .sat import SATEvaluator, get_sat_dataset
 from .svamp import SVAMPEvaluator, get_svamp_dataset
 from .bgqa import get_bgqa_dataset
+from .strategyqa import STGEvaluator, get_strategyqa_dataset
 
 def get_evaluator(task):
     if task == 'gsm8k':
@@ -19,6 +20,8 @@ def get_evaluator(task):
         return SATEvaluator()
     elif task == 'svamp':
         return SVAMPEvaluator()
+    elif task == 'strategyqa':
+        return STGEvaluator()
 
 def get_judge_answer(task):
     evaluator = get_evaluator(task)
@@ -43,5 +46,7 @@ def get_one_dataset(task):
         return get_svamp_dataset
     elif task == 'bgqa':
         return get_bgqa_dataset
+    elif task == 'strategyqa':
+        return get_strategyqa_dataset
     else:
         raise NotImplementedError(f"Task {task} not implemented yet")

@@ -21,7 +21,7 @@ jobs:
 
 job_template = \
 """- name: {job_name}
-  sku: G1
+  sku: G8
   priority: high
   mpi: True
 
@@ -31,9 +31,10 @@ job_template = \
     - sudo apt-get install git-lfs
     - git lfs install
     - cd /scratch
-    - git clone {model_url}
-    - cd /scratch/amlt_code/
-    - {script}
+    # - git clone {model_url}
+    # - cd /scratch/amlt_code/
+    # - {script}
+    - sleep infinity
 
   submit_args: 
     env:
@@ -42,6 +43,7 @@ job_template = \
 
 model_url = {
     # masked
+    "Meta-Llama-3-8B": None
 }
 
 def main():
@@ -90,7 +92,7 @@ def main():
         subprocess.run(["amlt", "run", "-t", "local", "--use-sudo", tmp_name, "--devices", "all"])
     else:
         # subprocess.run(f'amlt run -d {description} {tmp_name} {job_name}', shell=True)
-        subprocess.run(["amlt", "run", "-d", description, tmp_name, job_name, "--sla", "standard"])
+        subprocess.run(["amlt", "run", "-d", description, tmp_name, job_name])
 
 if __name__ == "__main__":
     main()

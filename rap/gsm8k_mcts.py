@@ -198,6 +198,13 @@ def reasoning_mcts_search(question: str,
         overall_question = match[1] if match else question.split(" A. ")[0]
     elif task == "bgqa":
         overall_question = question.split("Based on the game state and the rules and preferences, ")[-1].strip()
+    elif task == "strategyqa":
+        print("""for strategyqa, please check line 104:
+        def is_terminal(self):
+            return self._static_terminal()
+        "or self.reward < -1" should be deleted""")
+        import pdb; pdb.set_trace()
+        overall_question = question.split(".")[-1].strip()
     overall_question = overall_question[0].upper() + overall_question[1:]
     prompt_index = prompts['index']
 
@@ -293,6 +300,9 @@ def reasoning_mcts_search(question: str,
         temp_r = extract_answer_fn(traj.strip().split("\n")[-1])
         if temp_r == None:
             temp_r = 'not found'
+        if output_ans_list:
+            with open(random_temp_log, 'a') as f:
+                f.write(temp_r + "\n")
         pbar.set_description(f'{max_r:.3f} {temp_r}')
         tree_copy = deepcopy(root)
         tree_copy.Q = dict(mcts.Q)

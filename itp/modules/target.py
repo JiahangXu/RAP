@@ -2,8 +2,8 @@ genai_a100_target_new = \
 """
 target:
   service: sing
-  name: aims-sing-res-wus3-02
-  vc: singularity_vcs-extended
+  name: GenAI-Shared-UKSouth
+  vc: singularity-genai-gpu-uksouth
   workspace_name: aims-a100-westus3-WS
 
 environment: 

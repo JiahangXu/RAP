@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+import os
 import torch
 from vllm import SamplingParams
 
@@ -44,12 +45,9 @@ class QueryVLLM(QueryLM):
         all_results = [prompt + output.text + ("\n" if "\n" not in output.text else "") for output in completions[0].outputs]
 
         if self.log_file:
-            with open(self.log_file, "a") as f:
-                f.write("="*50+"\n")
-                f.write(prompt + "\n")
-                for result in all_results:
-                    f.write("-"*50+"\n")
-                    f.write(result.replace(prompt, "") + "\n")
+            with open(os.path.join(self.log_file, "token_num.txt"), "a") as f:
+                all_tokens = [len(output.token_ids) for output in completions[0].outputs]
+                f.write(",".join([str(tokens) for tokens in all_tokens]) + "\n")
         return all_results
 
 class QueryHfModel(QueryLM):
