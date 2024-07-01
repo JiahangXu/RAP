@@ -2,7 +2,7 @@ import pickle
 import re
 from datetime import datetime
 
-from rap.models import QueryLlama, QueryHfModel, QueryVLLM
+from rap.models import QueryLlama, QueryHfModel, QueryVLLM, QueryOpenAI
 from rap.utils import get_judge_answer, get_extract_answer_fn, get_one_dataset
 from rap.gsm8k_mcts import reasoning_mcts_search
 
@@ -61,9 +61,9 @@ def most_common_element(lst):
 
 
 def main_mcts(model_ckpt='../Llama-2-7b-hf',
-              model_type='hf', # choose from ["hf", "vllm", "gpt" (not support yet)]
+              model_type='hf', # choose from ["hf", "vllm", "gpt"]
               task="gsm8k",
-              data_split="test",
+              data_split="test_all",
               prompts=None,
               question_prompts=None,
               max_batch_size=2,
@@ -116,9 +116,15 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
     if model_type == "hf":
         model, tokenizer = load_hf(model_ckpt)
         world_model = QueryHfModel(model, tokenizer, max_response_length=max_response_length, log_file=log_dir)
+        eos_token_id = world_model.tokenizer.encode('\n', bos=False, eos=False)[-1]
     elif model_type == "vllm":
         model, tokenizer = load_vllm(model_ckpt)
         world_model = QueryVLLM(model, tokenizer, max_response_length=max_response_length, log_file=log_dir)
+        eos_token_id = world_model.tokenizer.encode('\n')[-1]
+    elif model_type == "gpt":
+        model, tokenizer = model_ckpt, None
+        world_model = QueryOpenAI(model, max_response_length=max_response_length, log_file=log_dir)
+        eos_token_id = "\n"
 
     examples = get_dataset(data_split)
     with open(prompts) as f:
@@ -143,7 +149,7 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
                                                     w_exp=w_exp,
                                                     r_alpha=r_alpha,
                                                     r1_default=r1_default,
-                                                    eos_token_id=world_model.tokenizer.encode('\n')[-1],
+                                                    eos_token_id=eos_token_id,
                                                     speedup_confidence_batch_size=speedup_confidence_batch_size,
                                                     task=task,
                                                     extract_answer_fn=extract_answer_fn,

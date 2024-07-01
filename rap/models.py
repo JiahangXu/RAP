@@ -1,10 +1,18 @@
 from abc import ABC, abstractmethod
-from typing import List
-
 import os
+import time
 import torch
+from tqdm import tqdm
+import concurrent.futures
 from vllm import SamplingParams
+from typing import List
+from openai import AzureOpenAI
 
+client = AzureOpenAI(
+    api_key=os.environ.get('GPT35_KEY', ''),
+    api_version="2023-12-01-preview",
+    azure_endpoint="https://gcrendpoint.azurewebsites.net",
+)
 
 class QueryLM(ABC):
     @abstractmethod
@@ -15,6 +23,99 @@ class QueryLM(ABC):
     def query_next_token(self, prompt: List[str]):
         pass
 
+
+class QueryOpenAI(QueryLM):
+    def __init__(self, model_ckpt, max_response_length, log_file) -> None:
+        self.model_ckpt = model_ckpt
+        self.max_response_length = max_response_length
+        self.log_file = log_file
+        self.max_batch_size = 1
+
+    def generate_with_OpenAI_model(
+        self,
+        prompt,
+        max_tokens=256,
+        temperature=0.8,
+        top_k=40,
+        top_p=0.95,
+        stop=["\n"],
+    ):
+        messages = [{"role": "user", "content": prompt}]
+        parameters = {
+            "model": self.model_ckpt,
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+            "top_p": top_p,
+            "stop": stop,
+            "seed": 1,
+        }
+
+        ans, timeout = "", 5
+        while not ans:
+            try:
+                time.sleep(timeout)
+                completion = client.chat.completions.create(messages=messages, **parameters)
+                ans = completion.choices[0].message.content
+            except Exception as e:
+                print(e)
+            if not ans:
+                timeout = timeout * 2
+                if timeout > 120:
+                    timeout = 1
+                try:
+                    print(f"Will retry after {timeout} seconds ...")
+                except:
+                    pass
+        return ans, completion.usage.completion_tokens
+
+    def generate_n_with_OpenAI_model(
+        self,
+        prompt,
+        n=1,
+        max_tokens=256,
+        temperature=0.8,
+        top_k=40,
+        top_p=0.95,
+        stop=["\n"],
+        max_threads=32,
+        disable_tqdm=True,
+    ):
+        preds = []
+        completion_tokens = []
+        with concurrent.futures.ProcessPoolExecutor(max_workers=max_threads) as executor:
+            futures = [executor.submit(self.generate_with_OpenAI_model, prompt, max_tokens, temperature, top_k, top_p, stop) for _ in range(n)]
+            for i, future in tqdm(enumerate(concurrent.futures.as_completed(futures)), total=len(futures), desc='running evaluate', disable=disable_tqdm):
+                ans, c_tokens = future.result()
+                preds.append(ans)
+                completion_tokens.append(c_tokens)
+        return preds, completion_tokens
+
+    def query_next_token(self, prompt):
+        ret = []
+        for p in prompt:
+            completion, _ = self.generate_with_OpenAI_model(p, temperature=0.0, max_tokens=1)
+            if completion.lower().startswith("yes"):
+                ret.append(torch.tensor([1, 0]).cuda().float())
+            else:
+                ret.append(torch.tensor([0, 1]).cuda().float())
+        ret = torch.stack(ret, dim=0)
+        dist = torch.softmax(ret, dim=-1)
+        return dist
+
+    def query_LM(self, prompt, eos_token_id, num_return_sequences=1, do_sample=True, temperature=0.8):
+        completions, c_tokens = self.generate_n_with_OpenAI_model(
+            prompt,
+            n=num_return_sequences,
+            max_tokens=self.max_response_length,
+            temperature=temperature,
+            stop=[eos_token_id],)
+        
+        all_results = [prompt + output + ("\n" if "\n" not in output else "") for output in completions]
+
+        if self.log_file:
+            with open(os.path.join(self.log_file, "token_num.txt"), "a") as f:
+                f.write(",".join([str(tokens) for tokens in c_tokens]) + "\n")
+        return all_results
 
 class QueryVLLM(QueryLM):
     def __init__(self, model, tokenizer, max_response_length, log_file) -> None:
