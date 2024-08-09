@@ -129,7 +129,7 @@ class QueryVLLM(QueryLM):
     @torch.no_grad()
     def query_next_token(self, prompt):
         sampling_params = SamplingParams(logprobs=5, max_tokens=1)
-        completions = self.model.generate(prompt, sampling_params)
+        completions = self.model.generate(prompt, sampling_params, use_tqdm=False)
         ret = []
         for completion in completions:
             logits = completion.outputs[0].logprobs[0]
@@ -142,7 +142,7 @@ class QueryVLLM(QueryLM):
 
     def query_LM(self, prompt, eos_token_id, num_return_sequences=1, do_sample=True, temperature=0.8):
         sampling_params = SamplingParams(temperature=temperature, n=num_return_sequences, max_tokens=self.max_response_length, stop_token_ids=[eos_token_id], stop="\n")
-        completions = self.model.generate(prompt, sampling_params)
+        completions = self.model.generate(prompt, sampling_params, use_tqdm=False)
         all_results = [prompt + output.text + ("\n" if "\n" not in output.text else "") for output in completions[0].outputs]
 
         if self.log_file:

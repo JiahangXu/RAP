@@ -105,6 +105,10 @@ class ReasoningMCTSNode(MCTSNode):
 
     @property
     def reward(self):
+        # return random.uniform(0, 1) # random all
+
+        # self._r0 = random.uniform(0, 1) # random r0
+        # self._r1 = random.uniform(0, 1) # random r1
         if self._r0 < 0 or self._r1 < 0:
             return min(self._r0, self._r1)
         return self._r0 ** self._r_alpha * self._r1 ** (1 - self._r_alpha)
@@ -178,7 +182,7 @@ def reasoning_mcts_search(question: str,
 
     if speedup_confidence_batch_size is None:
         speedup_confidence_batch_size = n_sample_confidence
-    if task in ["gsm8k", "gsm8khard", "math", "svamp"]:
+    if task in ["gsm8k", "gsm8khard", "math", "svamp", "multiarith"]:
         match = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)
         overall_question = match[1] if match else question
     elif task == "folio":
@@ -293,7 +297,7 @@ def reasoning_mcts_search(question: str,
     trees = []
     for _ in (pbar := trange(mcts_rollouts, disable=bool(int(os.environ.get("LOCAL_RANK", -1))), position=0)):
         mcts.rollout(root)
-        root.print(mcts)
+        # root.print(mcts)
         max_n, max_r = mcts.max_mean_terminal(root)
         trajs.append(traj := max_n.prompt.split('\n\n')[-1])
         # import pdb; pdb.set_trace()

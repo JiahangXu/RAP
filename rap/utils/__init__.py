@@ -7,9 +7,10 @@ from .svamp import SVAMPEvaluator, get_svamp_dataset
 from .bgqa import get_bgqa_dataset
 from .strategyqa import STGEvaluator, get_strategyqa_dataset
 from .gsm8khard import get_gsm8khard_dataset
+from .multiarith import get_multiarith_dataset
 
 def get_evaluator(task):
-    if task == 'gsm8k' or task == 'gsm8khard':
+    if task == 'gsm8k' or task == 'gsm8khard' or task == 'multiarith':
         return GSM8KEvaluator()
     elif task == 'folio' or task == 'bgqa':
         return FOLIOEvaluator()
@@ -37,6 +38,8 @@ def get_one_dataset(task):
         return get_gsm8k_dataset
     elif task == 'gsm8khard':
         return get_gsm8khard_dataset
+    elif task == 'multiarith':
+        return get_multiarith_dataset
     elif task == 'math':
         return get_math_dataset
     elif task == "logiqa":
