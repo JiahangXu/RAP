@@ -8,6 +8,7 @@ from .bgqa import get_bgqa_dataset
 from .strategyqa import STGEvaluator, get_strategyqa_dataset
 from .gsm8khard import get_gsm8khard_dataset
 from .multiarith import get_multiarith_dataset
+from .amc import AMCEvaluator, get_amc_dataset
 
 def get_evaluator(task):
     if task == 'gsm8k' or task == 'gsm8khard' or task == 'multiarith':
@@ -24,6 +25,8 @@ def get_evaluator(task):
         return SVAMPEvaluator()
     elif task == 'strategyqa':
         return STGEvaluator()
+    elif task == 'amc':
+        return AMCEvaluator()
 
 def get_judge_answer(task):
     evaluator = get_evaluator(task)
@@ -54,5 +57,7 @@ def get_one_dataset(task):
         return get_bgqa_dataset
     elif task == 'strategyqa':
         return get_strategyqa_dataset
+    elif task == 'amc':
+        return get_amc_dataset
     else:
         raise NotImplementedError(f"Task {task} not implemented yet")

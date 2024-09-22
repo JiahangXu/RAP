@@ -106,6 +106,9 @@ scripts = [
     "\"python run_gsm8k.py --model_type vllm --model_ckpt ../Phi-3-mini-4k-instruct --data_split test_all --task gsm8khard\"",
     "\"python run_gsm8k.py --model_type vllm --model_ckpt ../Mistral-7B-v0.1 --data_split test_all --task gsm8khard\"",
     "\"python run_gsm8k.py --model_type vllm --model_ckpt ../Meta-Llama-3-8B --data_split test_all --task gsm8khard\"",
+    
+    # # amc
+    # python run_gsm8k.py --model_type vllm --model_ckpt ../Meta-Llama-3-8B-Instruct --data_split test_all --task amc
 ]
 
 for item in scripts:

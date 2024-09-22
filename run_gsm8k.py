@@ -16,7 +16,7 @@ import fire
 import time
 import json
 import random
-import mlflow
+# import mlflow
 import numpy as np
 import math
 from pathlib import Path
@@ -24,7 +24,7 @@ from tqdm import tqdm
 from collections import Counter
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-mlflow.autolog()
+# mlflow.autolog()
 
 def load_hf(model_ckpt):
     start_time = time.time()
@@ -87,14 +87,14 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
         if model_ckpt.endswith("/"):
             model_ckpt = model_ckpt[:-1]
         if sing:
-            log_dir = f'/mnt/teamdrive/jiahang_temp/RAP/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
+            log_dir = f'/mnt/teamdrive/jiahang/rStar/rap/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
         else:
             log_dir = f'logs/{task}_mcts_{model_ckpt.split("/")[-1]}/{datetime.now().strftime("%Y-%m%d-%H%M")}'
 
     os.makedirs(log_dir, exist_ok=True)
     if output_ans_list:
         if sing:
-            log_dir2 = f'/mnt/teamdrive/jiahang_temp/RAP/rap/{task}/{model_ckpt.split("/")[-1]}/'
+            log_dir2 = f'/mnt/teamdrive/jiahang/rStar/rap/{task}/{model_ckpt.split("/")[-1]}/'
         else:
             log_dir2 = f'logs/rap/{task}/{model_ckpt.split("/")[-1]}/'
         os.makedirs(log_dir2, exist_ok=True)
@@ -203,10 +203,10 @@ def main_mcts(model_ckpt='../Llama-2-7b-hf',
                     desc += f", model_limit: {total_model_limit_correct}/{i+1-start_idx}={total_model_limit_correct/(i+1-start_idx)*100:.3f}, " + \
                             f"major_vote: {total_major_vote_correct}/{i+1-start_idx}={total_major_vote_correct/(i+1-start_idx)*100:.3f}"
                 pbar.set_description(desc)
-                mlflow.log_metric("acc", total_correct[-1]/(i+1-start_idx)*100)
-                if output_ans_list:
-                    mlflow.log_metric("model_limit_acc", total_model_limit_correct/(i+1-start_idx)*100)
-                    mlflow.log_metric("major_vote_acc", total_major_vote_correct/(i+1-start_idx)*100)
+                # mlflow.log_metric("acc", total_correct[-1]/(i+1-start_idx)*100)
+                # if output_ans_list:
+                #     mlflow.log_metric("model_limit_acc", total_model_limit_correct/(i+1-start_idx)*100)
+                #     mlflow.log_metric("major_vote_acc", total_major_vote_correct/(i+1-start_idx)*100)
         except Exception as e:
             print(f"Error in example {example['id']}: {e}")
 

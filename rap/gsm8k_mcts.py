@@ -182,7 +182,7 @@ def reasoning_mcts_search(question: str,
 
     if speedup_confidence_batch_size is None:
         speedup_confidence_batch_size = n_sample_confidence
-    if task in ["gsm8k", "gsm8khard", "math", "svamp", "multiarith"]:
+    if task in ["gsm8k", "gsm8khard", "math", "svamp", "multiarith", "amc"]:
         match = re.match('.*((Calculate|calculate|how|How|what|What|Find|find|True or false).*)$', question)
         overall_question = match[1] if match else question
     elif task == "folio":
